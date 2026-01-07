@@ -3,3 +3,6 @@ _site
 .idea/
 *.swp
 *.DS_Store
+
+.bundle/
+vendor/
