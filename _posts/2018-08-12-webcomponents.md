@@ -17,7 +17,7 @@ Maybe a way of avoiding _costly_ rewrites would be to have a look at [web compon
 
 Web components are not tied to any framework. They make use of HTML, CSS and JavaScript. So whether we use Angular or Vue.js or anything else we would be able to reuse our web components without any specific library just by using the native features of our browsers.
 
-For our example we'll be using a modified and stripped down example by [Wolfram Kriesing](https://twitter.com/wolframkriesing/status/1026075696748220417), who did a terrific job explaining the concept at [BusConf 2018](http://www.bus-conf.org/).
+For our example we'll be using a modified and stripped down example by [Wolfram Kriesing](https://x.com/wolframkriesing/status/1026075696748220417), who did a terrific job explaining the concept at [BusConf 2018](http://www.bus-conf.org/).
 
 Our goal is to display a `h1` tag with an icon to the left. The icon should produce a link to the heading in our browsers search bar. The result is similar to what we see when we hover on any of the headings (take `Setup` for example) in [a README.md file](https://github.com/axelhodler/hodler.github.io/blob/master/README.md) on GitHub.
 

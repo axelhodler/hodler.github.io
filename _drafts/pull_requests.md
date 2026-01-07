@@ -15,7 +15,7 @@ Pull requests which would not meet any of the quality standards but since tomorr
 
 Others are assigned to specific members of the team you know won't complain if there are zero tests.
 
-While Martin Fowler calls it [preparatory refactoring](https://martinfowler.com/articles/preparatory-refactoring-example.html) and [Kent Beck summarizes it as](https://twitter.com/kentbeck/status/250733358307500032?lang=de)
+While Martin Fowler calls it [preparatory refactoring](https://martinfowler.com/articles/preparatory-refactoring-example.html) and [Kent Beck summarizes it as](https://x.com/kentbeck/status/250733358307500032?lang=de)
 
 > make the change easy then make the easy change.
 

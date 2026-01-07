@@ -17,7 +17,7 @@ The following post is a recollection of some thoughts and lessons learned throug
 
 After a quick icebreaker these were the sessions of the day
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">OpenSpace panel. Really excited with the proposals! <a href="https://t.co/KRu3VpS63v">pic.twitter.com/KRu3VpS63v</a></p>&mdash; Socracan (SoCraTes Canaries) (@socracan) <a href="https://twitter.com/socracan/status/984732710341103616?ref_src=twsrc%5Etfw">April 13, 2018</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">OpenSpace panel. Really excited with the proposals! <a href="https://t.co/KRu3VpS63v">pic.twitter.com/KRu3VpS63v</a></p>&mdash; Socracan (SoCraTes Canaries) (@socracan) <a href="https://x.com/socracan/status/984732710341103616?ref_src=twsrc%5Etfw">April 13, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 I participated in the following ones
@@ -65,7 +65,7 @@ We ended the official part of the day at a bar telling stories of how we work. T
 
 After a retrospective for the day before these were the sessions that emerged
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Ready to talk about CDC testing and continue learning from others at the <a href="https://twitter.com/hashtag/socracan2018?src=hash&amp;ref_src=twsrc%5Etfw">#socracan2018</a> second day 🚀 <a href="https://t.co/ewmiLiKLRF">pic.twitter.com/ewmiLiKLRF</a></p>&mdash; Paulo Clavijo (@pclavijo) <a href="https://twitter.com/pclavijo/status/985109174483898369?ref_src=twsrc%5Etfw">April 14, 2018</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Ready to talk about CDC testing and continue learning from others at the <a href="https://x.com/hashtag/socracan2018?src=hash&amp;ref_src=twsrc%5Etfw">#socracan2018</a> second day 🚀 <a href="https://t.co/ewmiLiKLRF">pic.twitter.com/ewmiLiKLRF</a></p>&mdash; Paulo Clavijo (@pclavijo) <a href="https://x.com/pclavijo/status/985109174483898369?ref_src=twsrc%5Etfw">April 14, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### Consumer Driven Contract Testing
@@ -127,6 +127,6 @@ The retrospective at the end concluded everyone had a blast. The only negative p
 
 A big thank you to all the participants. I'm definitely looking forward to the 2019 edition.
 
-<blockquote class="twitter-tweet tw-align-center" data-lang="en-gb"><p lang="en" dir="ltr">Final retrospective at the beach. Such amazing weather and place. Thanks everybody for creating an amazing experience every year. See you again in 2019! <a href="https://t.co/PXm7uVaRu0">pic.twitter.com/PXm7uVaRu0</a></p>&mdash; Socracan (SoCraTes Canaries) (@socracan) <a href="https://twitter.com/socracan/status/985240938099433472?ref_src=twsrc%5Etfw">14 April 2018</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" data-lang="en-gb"><p lang="en" dir="ltr">Final retrospective at the beach. Such amazing weather and place. Thanks everybody for creating an amazing experience every year. See you again in 2019! <a href="https://t.co/PXm7uVaRu0">pic.twitter.com/PXm7uVaRu0</a></p>&mdash; Socracan (SoCraTes Canaries) (@socracan) <a href="https://x.com/socracan/status/985240938099433472?ref_src=twsrc%5Etfw">14 April 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 

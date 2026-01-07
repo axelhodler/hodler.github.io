@@ -18,7 +18,7 @@ Let's think about overtaking Tesla from the perspective of what is often referre
 
 The legacy automaker does not need to start with building it's own [self driving chip](https://www.theverge.com/2019/4/22/18511594/tesla-new-self-driving-chip-is-here-and-this-is-your-best-look-yet) due to some differences with Nvidia. It might be possible to take smaller steps.
 
-During a SpaceX event [Elon Musk stated](https://twitter.com/Erdayastronaut/status/1203840982497792005):
+During a SpaceX event [Elon Musk stated](https://x.com/Erdayastronaut/status/1203840982497792005):
 
 > The best part is no part. The best process is no process. It weighs nothing. Costs nothing. Can’t go wrong
 

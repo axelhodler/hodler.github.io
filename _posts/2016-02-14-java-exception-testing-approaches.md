@@ -8,7 +8,7 @@ tags: []
 ---
 This following blog post was inspired by [Use JUnit’s expected exceptions sparingly](http://blog.jooq.org/2016/01/20/use-junits-expected-exceptions-sparingly/). Instead of telling you what you should or should not do let's try to offer different approaches to test driving exceptions.
 
-As an example for why we need to test exceptions we use the fabulous TDD Kata [String Calculator](http://osherove.com/tdd-kata-1/) by [Roy Osherove](https://twitter.com/royosherove). It states:
+As an example for why we need to test exceptions we use the fabulous TDD Kata [String Calculator](http://osherove.com/tdd-kata-1/) by [Roy Osherove](https://x.com/royosherove). It states:
 
 > Calling Add with a negative number will throw an exception “negatives not allowed” - and the negative that was passed.if there are multiple negatives, show all of them in the exception message
 

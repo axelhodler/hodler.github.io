@@ -7,7 +7,7 @@ category:
 tags: []
 ---
 
-During [SoCraTes 2018](https://www.socrates-conference.de/) I was able to participated in an incredible session on Coffee and Kanban facilitated by [Raimo Radczewski](https://twitter.com/rradczewski).
+During [SoCraTes 2018](https://www.socrates-conference.de/) I was able to participated in an incredible session on Coffee and Kanban facilitated by [Raimo Radczewski](https://x.com/rradczewski).
 
 The goal was to produce a fresh cup of coffee using an [aeropress](https://www.aeropress.com/). If you are curious as to how much work and thought can get into a coffee _crafted_ with an aeropress check out this [short video](https://www.youtube.com/watch?v=pmjPjZZRhNQ).
 
