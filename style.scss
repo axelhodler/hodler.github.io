@@ -82,6 +82,14 @@ body {
 .social-link {
   color: black;
   padding-right: 6px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.social-link i,
+.social-link svg,
+.social-link img {
+  vertical-align: middle;
 }
 
 a {
