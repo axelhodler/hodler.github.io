@@ -3,7 +3,10 @@ My page at
 
 ## Setup macOS
 
-    bundle install # gem install if fails
+```
+gem install bundler:2.3.24 --user-install
+bundle install --path vendor/bundle
+```
 
 ## Setup Fedora
 
