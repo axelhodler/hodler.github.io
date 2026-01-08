@@ -3,9 +3,10 @@ My page at
 
 ## Setup macOS
 
-```
-gem install bundler:2.3.24 --user-install
-bundle install --path vendor/bundle
+```bash
+brew install rbenv ruby-build
+rbenv install 3.2.0
+bundle install
 ```
 
 ## Setup Fedora
