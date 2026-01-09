@@ -26,7 +26,7 @@ Others, well versed with [Git](https://git-scm.com/), will try the following to 
 git update-index --assume-unchanged config.json
 {% endhighlight %}
 
-No we at least avoid checking in our personal settings. That is until another developer decides to change the structure of the file and on the next pull from remote you will see
+Now we at least avoid checking in our personal settings. That is until another developer decides to change the structure of the file and on the next pull from remote you will see
 
 {% highlight java %}
 error: Your local changes to the following files would be overwritten by merge:

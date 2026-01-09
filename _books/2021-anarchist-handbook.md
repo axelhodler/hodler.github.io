@@ -4,7 +4,7 @@ year: 2021
 title: "The Anarchist Handbook - Michael Malice"
 ---
 
-A collection of essays, speeches and blog posts by leading figures of the anarchist history. Both by anarchists rejecting private property and the ones that do not. Socialists and capitalists or left and right. What unites them is regarding the state as evil. Or at least as innefficient and disincentived in providing better services than the free market or at providing the service at all.
+A collection of essays, speeches and blog posts by leading figures of the anarchist history. Both by anarchists rejecting private property and the ones that do not. Socialists and capitalists or left and right. What unites them is regarding the state as evil. Or at least as inefficient and disincentivized in providing better services than the free market or at providing the service at all.
 
 ## William Godwin
 

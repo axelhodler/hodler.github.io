@@ -20,7 +20,7 @@ One key to a healthy relationship is forgiveness.
 
 If you like to sell and are good at it, you'll always make more money, relative to how hard you work.
 
-People who tell you to follow your passiong are already rich.
+People who tell you to follow your passion are already rich.
 
 Nothing fantastic will happen without taking risk and subjecting yourself to rejection.
 

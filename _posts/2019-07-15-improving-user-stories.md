@@ -23,7 +23,7 @@ But is the User Story above a _proper_ User Story? Does it not have all the nece
 
 This article is an attempt to work with these questions.
 
-Let’s start with evaluating th _"Why?"_ part of the User Story? The reason for having the change in the first place. To give some context let’s suggest the app at hand is a note taking application from which the user can’t currently log out. The desired benefit is stated as
+Let’s start with evaluating the _"Why?"_ part of the User Story? The reason for having the change in the first place. To give some context let’s suggest the app at hand is a note taking application from which the user can’t currently log out. The desired benefit is stated as
 
 {% highlight text %}
 So that I can log out

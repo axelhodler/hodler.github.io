@@ -4,7 +4,7 @@ year: 2019
 title: "Kitchen Confidential - Anthony Bourdain"
 ---
 
-Having visted two places Anthony Bourdain has been to in Vietnam - You will hear people mentioning the fact. I got reminded of his book Kitchen Confidential. Having read it in early 2019.
+Having visited two places Anthony Bourdain has been to in Vietnam - You will hear people mentioning the fact. I got reminded of his book Kitchen Confidential. Having read it in early 2019.
 
 Anthony Bourdain takes us through his development as a cook from bottom to top. He shows us how the kitchen in a restaurant operates. On what the staff does. Quirks of the different nationalities present. And the economics of running a successful restaurant.
 

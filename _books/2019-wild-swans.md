@@ -10,7 +10,7 @@ To understand the country better why not dive a bit into modern chinese history?
 
 Wild Swans recounts the lives of three female generations in China. The grandmother of the author, a concubine with bound feet. The mother of the author, who at age fiften began working for the communist party and rose through the ranks and finally the author herself and her life through the Cultural Revolution.
 
-It describes the horrors, trials, tribulations, destruction of society and the economy during the Great Leap Forward and the Cultural Revolution under Mao. Starvation, torture, nepotism and outright insanity. In that case it's similar to soviel rule as described by Aleksandr Solzhenitsyn in [The Gulag Archipelago](https://en.wikipedia.org/wiki/The_Gulag_Archipelago).
+It describes the horrors, trials, tribulations, destruction of society and the economy during the Great Leap Forward and the Cultural Revolution under Mao. Starvation, torture, nepotism and outright insanity. In that case it's similar to soviet rule as described by Aleksandr Solzhenitsyn in [The Gulag Archipelago](https://en.wikipedia.org/wiki/The_Gulag_Archipelago).
 
 In the book Changs parents, starting out fighting for communism, soon discover that Mao's China is not the one they were fighting for and find themselves as victims of the system.
 

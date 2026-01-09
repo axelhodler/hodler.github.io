@@ -13,7 +13,7 @@ Before proceeding let's have a look at [Wikipedia](https://en.wikipedia.org/wiki
 
 > Continuous integration (CI) is the practice, in software engineering, of merging all developer working copies to a shared mainline several times a day.
 
-There is no mention of CI-Tools. If every developer on the team integrates his changes into be master branch on a daily basis then the team is doing CI. Feature branches that are kept open longer than a day are not acceptable. It goes without saying that the code in master should always build successfully and pass all tests since everyone depends on it.
+There is no mention of CI-Tools. If every developer on the team integrates his changes into the master branch on a daily basis then the team is doing CI. Feature branches that are kept open longer than a day are not acceptable. It goes without saying that the code in master should always build successfully and pass all tests since everyone depends on it.
 
 You might be asking: _"How are we going to implement a feature that takes weeks or months to implement if we can't create feature branches?"_. To solve the same issue in [Relution](https://www.relution.io) we enjoy using [Feature Toggles](http://martinfowler.com/bliki/FeatureToggle.html).
 
@@ -21,7 +21,7 @@ The server provides a list of features that are currently under construction. Ou
 
 Having explained how the daily integration of branches can be achieved lets look at some of the benefits:
 
-* Progress can be measured by working software. There will be no feature branch in the dreaded _almost done_ state. Every member of the team can look at the client and see the progress of a feature. We have the possibility to interact with all parts of the feature which are done. Allowing us the oppurtunity to take early countermeasures if the feature diverges from the original concept.
+* Progress can be measured by working software. There will be no feature branch in the dreaded _almost done_ state. Every member of the team can look at the client and see the progress of a feature. We have the possibility to interact with all parts of the feature which are done. Allowing us the opportunity to take early countermeasures if the feature diverges from the original concept.
 * Since huge changes to the codebase are split into multiple small integrations, we never have to review 50 commits that have a diff spanning over multiple hundred lines. This leads to a less error prone code review process as it's easier to spot issues in a small change than in a huge change.
 * Bugs are detected earlier since every developer works on the same state of the code base.
 * Possibility to [Refactor Mercilessly](http://c2.com/cgi/wiki?RefactorMercilessly) since the chance of breaking the implementation of a feature branch is non existent.

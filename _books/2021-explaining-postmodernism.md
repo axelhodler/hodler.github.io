@@ -1,10 +1,10 @@
 ---
 layout: post
 year: 2021
-title: "Explaning Postmodernism - Stephen Hicks"
+title: "Explaining Postmodernism - Stephen Hicks"
 ---
 
-Pre-modernism (Medievalism) dominated the West from 400 CE to 1400 CE, was ended by the Enlightenmend, bringing Modernism. Followed by the more recent Postmodernism.
+Pre-modernism (Medievalism) dominated the West from 400 CE to 1400 CE, was ended by the Enlightenment, bringing Modernism. Followed by the more recent Postmodernism.
 
 > Metaphysically, postmodernism is anti-realist, holding that it is impossible to speak meaningfully about an independently existing reality.
 

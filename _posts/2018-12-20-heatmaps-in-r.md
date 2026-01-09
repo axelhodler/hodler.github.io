@@ -9,7 +9,7 @@ tags: ["Data Visualization", "Data Analysis", "R", "McDonalds", "Maps"]
 
 <img src="https://www.dropbox.com/s/5bt8fohfknenrnl/header.png?raw=1" alt="preview_picture" />
 
-Recently we wanted to visualise some coordinates which are tracked during a specific API call. The goal was helping us to find out if the functionality is used at all and especially __where__ it is used. It might not be a good use of your time to improve a service in Antartica if no one there is trying to use it. Don't worry, thee is no connection between the user and the location.
+Recently we wanted to visualise some coordinates which are tracked during a specific API call. The goal was helping us to find out if the functionality is used at all and especially __where__ it is used. It might not be a good use of your time to improve a service in Antartica if no one there is trying to use it. Don't worry, there is no connection between the user and the location.
 
 Wouldn't it be cool to view that data quickly via [heat map](https://en.wikipedia.org/wiki/Heat_map)?
 
@@ -19,7 +19,7 @@ A good starting point, although with a sad topic, can be found [here](https://tr
 
 ### Finding sample data to work with
 
-Your actual data might be located in some database. Feel free to use is as the input. But for the sake of having some unrelated data for this post I'm taking all locations of [McDonald's](https://en.wikipedia.org/wiki/McDonald%27s) in Germany. No affiliation whatsoever to the company 😉. These locations can be found using their [german restaurant finder](http://www.mcdonalds.de/restaurant-suche). Simly increase the radius of the search area.
+Your actual data might be located in some database. Feel free to use is as the input. But for the sake of having some unrelated data for this post I'm taking all locations of [McDonald's](https://en.wikipedia.org/wiki/McDonald%27s) in Germany. No affiliation whatsoever to the company 😉. These locations can be found using their [german restaurant finder](http://www.mcdonalds.de/restaurant-suche). Simply increase the radius of the search area.
 
 {% highlight bash %}
 curl -X POST http://www.mcdonalds.de/search\?longitude\=9.481544\&latitude\=51.312801\&radius\=1000 > response.json

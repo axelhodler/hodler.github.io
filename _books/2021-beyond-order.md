@@ -80,7 +80,6 @@ title: "Beyond Order - Jordan B. Peterson"
 
 > But it is an uncommon woman, in my clinical and general professional experience, regardless of brilliance or talent, training, discipline, parental desire, youthful delusion, or cultural brainwashing who would not perform whatever sacrifice necessary to bring a child into the world by the time she is twenty-nine, or thirty-five, or worse, forty.
 
-> But it is an uncommon woman, in my clinical and general professional experience, regardless of brilliance or talent, training, discipline, parental desire, youthful delusion, or cultural brainwashing who would not perform whatever sacrifice necessary to bring a child into the world by the time she is twenty-nine, or thirty-five, or worse, forty.
 
 > “You will do, for now, and I presume you feel the same way about me. Otherwise we would just get married. But in the name of a common sense that neither of us possesses we are going to reserve the right to swap each other out for a better option at any point.” And if you do not think that is what living together means—as a fully articulated ethical statement—see if you can formulate something more plausible.
 

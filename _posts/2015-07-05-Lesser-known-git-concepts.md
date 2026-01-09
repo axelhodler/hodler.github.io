@@ -6,7 +6,7 @@ description: ""
 category:
 tags: [git]
 ---
-Its been six months since I've been part of switching the last project still running on SVN to git. Most of the developers in the project had not yet have the luck of working with git. After introducing the team to git and answering questions over the course of the following months i’m trying to give an overview of the two most common unknown concepts in git I've encountered.
+It's been six months since I've been part of switching the last project still running on SVN to git. Most of the developers in the project had not yet have the luck of working with git. After introducing the team to git and answering questions over the course of the following months I'm trying to give an overview of the two most common unknown concepts in git I've encountered.
 
 ## Understanding labels
 Following I'll use the term "label" for concepts such as branch and tag.

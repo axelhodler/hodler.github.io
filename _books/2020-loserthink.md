@@ -4,7 +4,7 @@ year: 2020
 title: "Loserthink - Scott Adams"
 ---
 
-Scott Adams, nowadays increasingly known for his politicial commentary instead of the creation of the Dilbert comics, attempts to show us how to think. Thus how to evaluate situations and how to effectively discuss your point of view.
+Scott Adams, nowadays increasingly known for his political commentary instead of the creation of the Dilbert comics, attempts to show us how to think. Thus how to evaluate situations and how to effectively discuss your point of view.
 
 The subtitle "How untrained brains are ruining america" gives us a context. It will lead through current topics such as Trump, Climate change, Racism, Gun control and other topics that dominate US political debate.
 
@@ -33,6 +33,6 @@ Example:
 > You believe a border wall will stop all drugs
 > I don't believe a border wall will stop all drugs. We are in complete agreement
 
-Showing the other side that enganging in mind reading is probably not the way.
+Showing the other side that engaging in mind reading is probably not the way.
 
 
