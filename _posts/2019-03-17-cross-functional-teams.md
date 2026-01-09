@@ -17,7 +17,7 @@ We have _[all competencies needed to accomplish the work without depending on ot
 
 In the spirit of [Kaizen](https://en.wikipedia.org/wiki/Kaizen) we want to improve. Our former bottlenecks have moved.
 
-Instead of waiting for the external design agency to deliver the css files and the icons we wait for Christina. Christina is currently speaking at a conference in Barcelona. Good for her. A blocker for team.
+Instead of waiting for the external design agency to deliver the css files and the icons we wait for Christina. Christina is currently speaking at a conference in Barcelona. Good for her. A blocker for the team.
 
 Our iOS app needs an update to properly deal with the new devices. Unfortunately our iOS developer quit last week to work for a startup. Allan our Android guy might be able to fix the issue if he was not hating the whole Apple ecosystem with a passion.
 
