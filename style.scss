@@ -68,7 +68,7 @@ html {
 
 body {
   color: rgba(41, 41, 41, 1);
-  background-color: #fff;
+  background-color: #FFFAF0;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -231,7 +231,7 @@ pre {
 
 code {
   font-size: 85%;
-  background-color: #f9f9f9;
+  background-color: #f7f2e7;
   border-radius: 3px;
 }
 
@@ -246,7 +246,7 @@ pre {
   white-space: pre-wrap;
   word-break: break-all;
   // word-wrap: break-word;
-  background-color: #f9f9f9;
+  background-color: #f7f2e7;
 }
 
 pre code {
@@ -314,7 +314,7 @@ th {
 
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
-  background-color: #f9f9f9;
+  background-color: #f7f2e7;
 }
 
 .container {
