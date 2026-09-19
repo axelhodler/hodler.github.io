@@ -1,12 +1,19 @@
 # Basic
-name:               "Axel Hodler"
+title:              "Axel Hodler"
+description:        "Lessons learned around software development, mostly."
+author:             "Axel Hodler"
 
 # URL
+url:                "https://www.hodler.co"
 baseurl:            ""
 permalink:          pretty
 
 # Markdown
 markdown:           kramdown
+
+# Plugins
+plugins:
+  - jekyll-feed
 
 # Navigation
 nav:
@@ -24,7 +31,6 @@ sass:
 collections:
   books:
     output: true
-
 
 # Scopes
 defaults:
