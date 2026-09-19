@@ -35,7 +35,6 @@ collections:
 # Not part of the published site
 exclude:
   - bin/
-  - test/
   - check_availability.sh
   - README.md
 

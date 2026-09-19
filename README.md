@@ -11,7 +11,7 @@ bundle install
 
 ## Setup Fedora
 
-    dnf install ruby-devel gcc-c++ aspell aspell-en tidy-html5
+    dnf install ruby-devel gcc-c++
     gem install bundler
     bundle install
 
@@ -19,10 +19,6 @@ bundle install
 Make site available at [http://localhost:4000](http://localhost:4000)
 
     ./bin/run.sh
-
-## Running tests
-
-    ./test/spell_checker.sh
 
 ## Graphviz files
 
