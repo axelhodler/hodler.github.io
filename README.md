@@ -5,7 +5,7 @@ My page at
 
 ```bash
 brew install rbenv ruby-build
-rbenv install 3.2.0
+rbenv install 3.4.9
 bundle install
 ```
 
