@@ -6,11 +6,11 @@ description: ""
 tags: []
 ---
 
-The thoughtworks Technology Radar has added the technique [Production data in test environments](https://www.thoughtworks.com/de-de/radar/techniques/production-data-in-test-environments). It has the status "Hold". Short for "Don't do that".
+The Thoughtworks Technology Radar has added the technique [Production data in test environments](https://www.thoughtworks.com/de-de/radar/techniques/production-data-in-test-environments). It has the status "Hold". Short for "Don't do that".
 
 I was asked what my thoughts are.
 
-It seems people having issues with the technique probably do use production data in test environments. Having worked on such systems, all the listed drawbacks are true. Some are more of an issue than others.
+It seems people who have issues with the technique probably do use production data in test environments. Having worked on such systems, all the listed drawbacks are true. Some are more of an issue than others.
 
 Protection of private data is important and of legal relevance. Sending _incorrect alerts_ from test systems to real clients can happen on production too. There are measures to avoid this. Previews that show who, or even a number of how many, will get the message. Or sending it to an internal group first before sending it to everyone applicable for the notification.
 
@@ -47,7 +47,7 @@ I always try to add this concept to products and projects I'm working on.
 
 ### Examples
 
-The roadtrips in the app below were not visible for everyone. They might just be there for testing. Instead of crossing the alps you can do a roadtrip from and to the office. Or check out how the content looks and feels before the customer sees it.
+The roadtrips in the app below were not visible to everyone. They might just be there for testing. Instead of crossing the Alps you can do a roadtrip from and to the office. Or check out how the content looks and feels before the customer sees it.
 
 All in production.
 
@@ -55,11 +55,11 @@ All in production.
 
 Another example.
 
-I do not drive the car below. Aside from the name the car might not even exist. Still it is mine in the production app. It is test data in production.
+I do not drive the car below. Aside from the name the car might not even exist. Still, it is mine in the production app. It is test data in production.
 
 <img src="https://www.dropbox.com/s/zrcs7hqhgjft1o9/pfsapp.PNG?raw=1" class="image__ios image__center"/>
 
-Do we now have the solution for the whole production data in test environments?
+Do we now have the solution for the whole production data in test environments issue?
 
 Guess not. It's providing options.
 

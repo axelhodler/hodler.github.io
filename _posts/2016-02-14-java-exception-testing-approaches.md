@@ -6,14 +6,14 @@ description: ""
 category:
 tags: []
 ---
-This following blog post was inspired by [Use JUnit’s expected exceptions sparingly](http://blog.jooq.org/2016/01/20/use-junits-expected-exceptions-sparingly/). Instead of telling you what you should or should not do let's try to offer different approaches to test driving exceptions.
+The following blog post was inspired by [Use JUnit’s expected exceptions sparingly](http://blog.jooq.org/2016/01/20/use-junits-expected-exceptions-sparingly/). Instead of telling you what you should or should not do, let's try to offer different approaches to test driving exceptions.
 
 As an example for why we need to test exceptions we use the fabulous TDD Kata [String Calculator](http://osherove.com/tdd-kata-1/) by [Roy Osherove](https://x.com/royosherove). It states:
 
 > Calling Add with a negative number will throw an exception “negatives not allowed” - and the negative that was passed.if there are multiple negatives, show all of them in the exception message
 
 ## JUnit4 - Annotation based
-Using the annotation based approach the test could look as follows
+Using the annotation-based approach the test could look as follows
 
 {% highlight java %}
 @Test(expected = RuntimeException.class)
@@ -22,7 +22,7 @@ public void does_not_allow_negative_numbers_as_input() {
 }
 {% endhighlight %}
 
-The above is fine if we do not care what message the exception uses. Maybe we only use exceptions with descriptive names or don't test the contents of the error message at all, because if you change the content your test will break. Making it subject to change and thus brittle. The same is valid for checking if a button states `Sign up` or `Create account`. We're probably be better off testing if the button is invoking the desired functionality instead of its wording.
+The above is fine if we do not care what message the exception uses. Maybe we only use exceptions with descriptive names or don't test the contents of the error message at all, because if you change the content your test will break. Making it subject to change and thus brittle. The same is valid for checking if a button states `Sign up` or `Create account`. We'd probably be better off testing if the button is invoking the desired functionality instead of its wording.
 
 Nevertheless, since the Kata requires us to show all the passed negative numbers in the exception message we need another approach.
 
@@ -44,7 +44,7 @@ public void does_not_allow_negative_numbers_as_input() {
 It's considered verbose and having the `fail();` adds extra complexity. The `fail();` is necessary to have a failing test, in case the exception is never thrown, as all the assertions are inside of the `catch` block. Using the structure above in multiple locations also leads to heavy code duplication.
 
 ## JUnit5 - Lambda
-[JUnit5](https://github.com/junit-team/junit5), which is, at the time of this writing, in it's alpha stage. It provides the following
+[JUnit5](https://github.com/junit-team/junit5) is, at the time of this writing, in its alpha stage. It provides the following
 
 {% highlight java %}
 @Test
@@ -103,4 +103,4 @@ public void does_not_allow_negative_numbers_as_input() {
 }
 {% endhighlight %}
 
-Personally I prefer AssertJ due to its fluency. Use what you and your team likes or agrees on. Now you know some of the possibilities.
+Personally I prefer AssertJ due to its fluency. Use what you and your team like or agree on. Now you know some of the possibilities.

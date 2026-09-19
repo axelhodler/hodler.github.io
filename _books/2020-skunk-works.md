@@ -12,9 +12,9 @@ It starts with the Lockheed [F-117 Nighthawk](https://en.wikipedia.org/wiki/Lock
 
 The F-117 consists of flat triangular shapes because the software back then was only able to calculate the radar cross section of a given configuration if it's in two dimensions. That's why the [B-2 Spirit](https://en.wikipedia.org/wiki/Northrop_Grumman_B-2_Spirit), a later stealth aircraft, has some rounded shapes due to improved software. Context: The radar return from an object is related to its edge configuration, not its size.
 
-We learn the argument to build a stealth aircraft was mostly to invalidate the huge spending the russians had on radar infrastructure. A stealth aircraft does not care how much you spend on radars.
+We learn the argument to build a stealth aircraft was mostly to invalidate the huge spending the Russians had on radar infrastructure. A stealth aircraft does not care how much you spend on radars.
 
-Other learnings include working on a ultra-classified project. Having lots of security measures where the people in charge of assuring the security care more about following the guidelines than turning out a successful project.
+Other learnings include working on an ultra-classified project. Having lots of security measures where the people in charge of assuring the security care more about following the guidelines than turning out a successful project.
 
 > The chief auditor came to me during a plant visit and said, “Mr. Rich, let’s get something straight: I don’t give a damn if you turn out scrap. It’s far more important that you turn out the forms we require.”
 

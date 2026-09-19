@@ -12,8 +12,6 @@ A critique of social contract theory
 
 > the social contract, considered as the foundation of civil government, requires of me more than this. I am not only obliged to consent to all the laws that are actually upon record, but to all the laws that shall hereafter be made.
 
-> the social contract, considered as the foundation of civil government, requires of me more than this. I am not only obliged to consent to all the laws that are actually upon record, but to all the laws that shall hereafter be made.
-
 ## Max Stirner
 
 > When a blockhead makes me out in the right, I grow distrustful of my rightness; I don’t like to receive it from him. But, even when a wise man makes me out in the right, I nevertheless am not in the right on that account. Whether I am in the right is completely independent of the fool’s making out and of the wise man’s.

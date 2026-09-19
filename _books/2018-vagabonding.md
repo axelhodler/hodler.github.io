@@ -36,4 +36,4 @@ Leaving you with
 
 > the most singular experiences of travel come in not finding what you'd hoped to discover
 
-Truly a book through which notes one should go before the start of an adventure.
+Truly a book whose notes one should go through before the start of an adventure.

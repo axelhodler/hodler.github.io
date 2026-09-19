@@ -7,7 +7,7 @@ category:
 tags: []
 ---
 
-During the development of [Kaffeesatz](https://github.com/axelhodler/kaffeesatz), a tool to take a Git Repository and get an overview on which files were edited the most, to identify which files could be candidates for a refactoring or are suspected to violate the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle), I wanted to show the user a visual cue on the progress of going through the history of the repository before he is able to see the report.
+During the development of [Kaffeesatz](https://github.com/axelhodler/kaffeesatz), a tool to take a Git Repository and get an overview of which files were edited the most, to identify which files could be candidates for a refactoring or are suspected to violate the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle), I wanted to show the user a visual cue on the progress of going through the history of the repository before he is able to see the report.
 
 I chose to display a progress bar in the terminal which will look as follows in the case where 30% of the report is completed
 
@@ -46,7 +46,7 @@ public void cleanUp() {
 }
 {% endhighlight %}
 
-Additionally one should not forget to reset the _stdout_ redirection in the `tearDown` method.
+Additionally, one should not forget to reset the _stdout_ redirection in the `tearDown` method.
 
 {% highlight java %}
 System.setOut(new PrintStream(
@@ -55,13 +55,13 @@ System.setOut(new PrintStream(
 
 Done. The progress bar display is tested and everything seems fine.
 
-But... The tests above are integration-tests which are testing the workings of _stdout_ multiple times although we should probably trust the correctness of Java libraries. We also do not have any idea `DisplayProgressBar` has a dependency on _stdout_. Usually dependencies of a class are made visible by passing them into the constructor of the class. Which, as a result, allows to replace the dependency during testing or, if its an interface, with a class implementing the interface.  This does not happen in the above case. The class violates the Dependency Inversion Principle.
+But... The tests above are integration-tests which are testing the workings of _stdout_ multiple times although we should probably trust the correctness of Java libraries. We also do not have any idea that `DisplayProgressBar` has a dependency on _stdout_. Usually dependencies of a class are made visible by passing them into the constructor of the class. This, as a result, allows us to replace the dependency during testing or, if it's an interface, with a class implementing the interface. This does not happen in the above case. The class violates the Dependency Inversion Principle.
 
 Having a look at [Wikipedia](https://en.wikipedia.org/wiki/Dependency_inversion_principle) we can define the _Dependency Inversion Principle_ as follows:
 
 > High-level modules should not depend on low-level modules. Both should depend on abstractions.
 
-_High-level modules_ in this case is the business logic of giving the user feedback on the progress of an operation. Low-level modules here is the _how_ we provide the progress to the user.
+_High-level modules_ in this case are the business logic of giving the user feedback on the progress of an operation. Low-level modules here are the _how_ we provide the progress to the user.
 
 The current implementation of `DisplayProgressBar` violates the principle because the use case of "providing progress to the user" depends on the delivery mechanism of displaying the progress bar. In our case the delivery mechanism is _stdout_.
 

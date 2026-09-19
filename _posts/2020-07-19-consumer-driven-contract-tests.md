@@ -8,7 +8,7 @@ tags: []
 
 Describing the practice in simple terms
 
-Say we provide a service. Getting a user by its id would return the following infos
+Say we provide a service. Getting a user by its id would return the following information
 
 {% highlight text %}
 curl https://someserver.com/api/users/1
@@ -27,13 +27,13 @@ The consumer of the service could be an app on iOS or Android. A web app. Or any
 
 The provider provides, controls and owns the service. A consumer of the service has an interest in getting some data or using some functionality. Plus the interest for the service not to break.
 
-Let’s think about an iOS app which would display each users age in a list. Maybe for customer relationship management.
+Let’s think about an iOS app which would display each user’s age in a list. Maybe for customer relationship management.
 
 There are two common ways to break the service and thus to impair the functionality of the app.
 
-First if the provider decides `users` is not really a great descriptor and should be `reader`. As a result the url would change to `api/reader/1` . A client who does not know of that change could have an application in production which now fails to retrieve the user.
+First, if the provider decides `users` is not really a great descriptor and should be `reader`. As a result the url would change to `api/reader/1`. A client who does not know of that change could have an application in production which now fails to retrieve the user.
 
-Second by the provider to state the field `age` should not be provided. And instead to provide a `birthdate` field with a timestamp. After all the clients could calculate the age by themselves. Our iOS client consuming the `age` field would break because the service does not provide the `age` anymore.
+Second, the provider might state the field `age` should not be provided, and instead provide a `birthdate` field with a timestamp. After all the clients could calculate the age by themselves. Our iOS client consuming the `age` field would break because the service does not provide the `age` anymore.
 
 In both cases some data will not be displayed. In the worst case the app might crash in production. Until a fix is provided by either side.
 
@@ -107,7 +107,7 @@ CDCT makes sure the requests and responses of the service have the correct struc
 
 ### Tooling setup and knowledge required
 
-On both the consumer and producer side its necessary to set up some tooling and define a way to work with each other using CDCT. An effort not every team might be willing to spend time on.
+On both the consumer and producer side it’s necessary to set up some tooling and define a way to work with each other using CDCT. An effort not every team might be willing to spend time on.
 
 ### Discussions about the design of the service
 
@@ -123,7 +123,7 @@ Just to have the service consumer F requires to be broken because consumer B sta
 
 ### Contract Management
 
-Depending on the amount of consumers. Plus the amount of version each consumer has out in the wild. Remember not everyone updates the iOS apps all the time. There are a lot of contracts to keep track of. The consumers need to tell the producers which contracts are not required anymore.
+Depending on the number of consumers. Plus the number of versions each consumer has out in the wild. Remember not everyone updates the iOS apps all the time. There are a lot of contracts to keep track of. The consumers need to tell the producers which contracts are not required anymore.
 
 ### We still need service documentation
 

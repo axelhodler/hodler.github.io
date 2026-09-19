@@ -6,13 +6,13 @@ title: "Loserthink - Scott Adams"
 
 Scott Adams, nowadays increasingly known for his political commentary instead of the creation of the Dilbert comics, attempts to show us how to think. Thus how to evaluate situations and how to effectively discuss your point of view.
 
-The subtitle "How untrained brains are ruining america" gives us a context. It will lead through current topics such as Trump, Climate change, Racism, Gun control and other topics that dominate US political debate.
+The subtitle "How untrained brains are ruining America" gives us a context. It will lead through current topics such as Trump, Climate change, Racism, Gun control and other topics that dominate US political debate.
 
 What then is loserthink?
 
 Some examples.
 
-Reading something into another persons statement which that person does not intend. Mind reading. Obvious examples are seeing subtle racism in some statements. Mind reading is loserthink. We can't be the thought police.
+Reading something into another person’s statement which that person does not intend. Mind reading. Obvious examples are seeing subtle racism in some statements. Mind reading is loserthink. We can't be the thought police.
 
 > You are what you do, not what you think
 

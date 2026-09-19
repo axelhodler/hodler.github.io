@@ -8,7 +8,7 @@ tags: []
 
 The [AWS Cloud Development Kit](https://aws.amazon.com/cdk/) (CDK) allows us to __define our cloud infrastructure using code__. Instead of clicking through the web UI, or AWS console as it is called, we use code. Code that can be checked into version control for collaboration, annotated with documentation and certainly for testing.
 
-The following post focusses on the testing aspect.
+The following post focuses on the testing aspect.
 
 If we choose TypeScript we can initialise a CDK project with the following command after having installed `aws-cdk`.
 
@@ -20,7 +20,7 @@ The project ends up with a generated empty stack. As the comment states we have 
 
 <script src="https://gist.github.com/axelhodler/eecbba79cf27327b0b0924b2d100ca95.js"></script>
 
-As an addition an initial test case has been generated in the `test` directory of our project. It makes sure to test the fact __our stack is empty__. As defined above. Having the test directory and an initial test already tells us the CDK code can be tested and the intention of the framework authors to have tests.
+As an addition, an initial test case has been generated in the `test` directory of our project. It makes sure to test the fact __our stack is empty__. As defined above. Having the test directory and an initial test already tells us the CDK code can be tested and the intention of the framework authors to have tests.
 
 <script src="https://gist.github.com/axelhodler/6acb2c90889e8c59a672a632768e5799.js"></script>
 
@@ -74,7 +74,7 @@ Here we can use `haveResourceLike` instead of `haveResource`. Else we would need
 
 <script src="https://gist.github.com/axelhodler/491245ab19f5af10dbb5b27869c572f4.js"></script>
 
-Using the CloudFormation JSON syntax makes the test pretty much unreadable. It has to be copied from the `cdk synth` output and pasted into the test code. It also gives us a glimpse of what writing CloudFormation templates would look like. In the future this cold be moved into a helper function.
+Using the CloudFormation JSON syntax makes the test pretty much unreadable. It has to be copied from the `cdk synth` output and pasted into the test code. It also gives us a glimpse of what writing CloudFormation templates would look like. In the future this could be moved into a helper function.
 
 ### Test driving changes
 
@@ -102,7 +102,7 @@ Sure, the health check will only work if we provide the default Spring Boot port
 
 ### Why would we want to test the CDK code?
 
-There are plenty of projects around that don’t test their CDK code. They might be fully productive without it. The [maintainers of the CDK project ](https://github.com/aws/aws-cdk) have tested the constructs to make sure they work. Thus we won’t have to. Still, there are some benefits to having them under test.
+There are plenty of projects around that don’t test their CDK code. They might be fully productive without it. The [maintainers of the CDK project](https://github.com/aws/aws-cdk) have tested the constructs to make sure they work. Thus we won’t have to. Still, there are some benefits to having them under test.
 
 The tests can act as a __sanity check__. Are the constructs doing what I’m expecting them to do? As an __early warning__ system if someone inadvertently removes something important. What if someone removes some critical configuration deemed unnecessary from their perspective? They can be used as __documentation and specification__ for future developers or our own future selves. And of course as part of the __test driven development__ workflow. We might not get as much design feedback on the constructs used from libraries but it will help to structure the way in which we work. Step by step.
 

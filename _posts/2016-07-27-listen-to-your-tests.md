@@ -18,7 +18,7 @@ public void addAllowedOperations(User user) {
 }
 {% endhighlight %}
 
-All allowed operations for the a `user` are fetched and added to it.
+All allowed operations for a `user` are fetched and added to it.
 
 Suppose we need a `User` with her `allowedOperations` in another class
 and achieve this by reusing the method above. In the Unit Test of the other
@@ -56,12 +56,12 @@ It does not look as straightforward as `given` and `willReturn` anymore.
 In fact I had to check the documentation to find out the Mockito syntax
 for this apparent _sorcery_.
 
-What I'm hinting at is even if we don't yet know what
+What I'm hinting at is that, even if we don't yet know what
 [Side-Effects](http://blog.jenkster.com/2015/12/what-is-functional-programming.html) are or which benefits
 [Immutability](https://en.wikipedia.org/wiki/Immutable_object) brings to the table, you are left with a sense that
 something is awry here.
 
-Thus by taking into account the added complexity of the test setup a 
+Thus, by taking into account the added complexity of the test setup, a 
 developer might, in the future, opt for a design which is easier to 
-test. Even if the method simply returns the mutated `App` object instead
+test. Even if the method simply returns the mutated `User` object instead
 of `void`.

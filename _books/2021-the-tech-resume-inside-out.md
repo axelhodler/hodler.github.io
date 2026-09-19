@@ -26,7 +26,7 @@ Hiring Manager writes the Job description. Make the final hire/no-hire decision.
 Recruiter guides the candidate through the interview process.
 Sourcer gets people interested in starting the process.
 
-In small companies or startups the Hiring Manager and Recruiter is the same person.
+In small companies or startups the Hiring Manager and Recruiter are the same person.
 
 Applicant Tracking Systems do not reject resumes, humans do. Recruiters would not trust automated systems as they could lose good candidates.
 
@@ -48,4 +48,4 @@ It's okay to adjust your job title to reflect your actual work done.
 
 Use active language, you "improved maintainability" instead of "improving maintainability". You "led", "developed", "shipped" and "operated".
 
-On formatting: Avoid bolding anything inside of sentences, avoid "spoken languages", a photo and too much social links, or social links that point to outdated websites and github profiles that do not show any commits or projects, fancy layouts (you are not applying for a UI/UX position)
+On formatting: Avoid bolding anything inside of sentences, avoid "spoken languages", a photo and too many social links, or social links that point to outdated websites and GitHub profiles that do not show any commits or projects, fancy layouts (you are not applying for a UI/UX position)

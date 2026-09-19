@@ -12,7 +12,7 @@ Pre-modernism (Medievalism) dominated the West from 400 CE to 1400 CE, was ended
 
 > "Truth" is a myth. "Reason" is a white male Eurocentric construct. "Equality" is a mask for oppressions.
 
-Focault: "reason, [...] is the ultimate language of madness"
+Foucault: "reason, [...] is the ultimate language of madness"
 Stanley Fish: "relieves me of the obligation to be right ... and demands only that I be interesting."
 
 > [...] many wanted to reinvigorate the German traditions of faith, duty, and ethnic identity that had been undermined by the Enlightenment’s emphasis upon reason, the pursuit of happiness, and cosmopolitanism.

@@ -15,7 +15,7 @@ The following post is a recollection of some thoughts and lessons learned throug
 
 ## Friday
 
-After a quick icebreaker these were the sessions of the day
+After a quick icebreaker, these were the sessions of the day
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">OpenSpace panel. Really excited with the proposals! <a href="https://t.co/KRu3VpS63v">pic.twitter.com/KRu3VpS63v</a></p>&mdash; Socracan (SoCraTes Canaries) (@socracan) <a href="https://x.com/socracan/status/984732710341103616?ref_src=twsrc%5Etfw">April 13, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -28,7 +28,7 @@ To have a definition of success we defined it as
 
 > customer got the value she expected in the expected amount of time
 
-It all boiled down to communication and trust between developers, the business and the customer. Also to having a small scope (MVP) by doing the most important thing first and increment from there. By rushing to get a huge scope done in time it all leads to non extendable code and bugs.
+It all boiled down to communication and trust between developers, the business and the customer. Also to having a small scope (MVP) by doing the most important thing first and incrementing from there. By rushing to get a huge scope done in time, it all leads to non-extendable code and bugs.
 
 ### CI/CD
 
@@ -36,20 +36,20 @@ A fruitful talk on the beach about how different teams handle their CI/CD pipeli
 
 ### API Monitoring
 
-The session started with a problem description. An app gets content, images and text, from a third party content server. As it happens some images or text might be missing. How would we get notified of missing content to avoid the issue of a customer viewing incomplete infos? After a quick solution of permanentely polling the content and validating it, sending notifications if something is missing, we got to the point of alleviating the problem altogether.
+The session started with a problem description. An app gets content, images and text, from a third party content server. As it happens some images or text might be missing. How would we get notified of missing content to avoid the issue of a customer viewing incomplete information? After a quick solution of permanently polling the content and validating it, sending notifications if something is missing, we got to the point of alleviating the problem altogether.
 
 By putting a quality gateway between the app and the content server we can avoid having the customer experience incomplete content. The quality gateway will completely reject incomplete content, sending a notification to someone who can resolve the issue of missing content.
 
 ### Event Storming
 
-With the best background imaginable, we have already seen the picture above, we did an event storming session for an auction house.
+With the best background imaginable (we have already seen the picture above), we did an event storming session for an auction house.
 One of the goals of event storming is using the same language between business and development, called _Ubiquitous Language_. Thus actions such as `EndAuction`, triggering events such as `AuctionEnded` are identified and interconnected. In the end one can identify the aggregates, e.g. Auction, Delivery, Payment to further structure the software into different services and classes.
 
 ### Waste
 
-A discussion on what we regard as waste during software development and how to decrease wasted time. Examples were working with Pull-Requests (PR), especially with juniors that are left working for a while on a PR to then tell them how to do it correctly instead of pairing with them in the first place. This does not only apply to juniors. Every seasoned developer probably had some moments were he spent quite a while on a non trivial solution just to see it discarded when during the code review of the PR a colleague came up with a simpler or more elegant solution.
+A discussion on what we regard as waste during software development and how to decrease wasted time. Examples were working with Pull-Requests (PR), especially with juniors that are left working for a while on a PR to then tell them how to do it correctly instead of pairing with them in the first place. This does not only apply to juniors. Every seasoned developer probably had some moments where he spent quite a while on a non-trivial solution just to see it discarded when during the code review of the PR a colleague came up with a simpler or more elegant solution.
 
-Another big topic were statistics such as the velocity of the team or burn-down charts. They can easily be gamed and tell nothing about whether value was delivered to the customer. All these were the ones which found almost unanimous agreement. Differences started to emerge as soon as branching workflows were called waste when comparing them to trunk based development.
+Another big topic was statistics such as the velocity of the team or burn-down charts. They can easily be gamed and tell nothing about whether value was delivered to the customer. All these were the ones which found almost unanimous agreement. Differences started to emerge as soon as branching workflows were called waste when comparing them to trunk based development.
 
 ### Nature of learning
 
@@ -70,7 +70,7 @@ After a retrospective for the day before these were the sessions that emerged
 
 ### Consumer Driven Contract Testing
 
-A topic that is heavily used in one of my current projects. One quick way of describing it could be _TDD for microservices_. The API consumers (e.g. an app or another microservice) write contracts on how he requires the API to behave, e.g. which fields of a response he uses. On the provider side (a service) there will be a test which makes sure the contract is not violated. Thus if the provider removes a field from a response, which is not mentioned in any contract, all tests will still pass. Thus the field was save to be removed. No consumer was using or expecting it.
+A topic that is heavily used in one of my current projects. One quick way of describing it could be _TDD for microservices_. The API consumers (e.g. an app or another microservice) write contracts on how they require the API to behave, e.g. which fields of a response they use. On the provider side (a service) there will be a test which makes sure the contract is not violated. Thus if the provider removes a field from a response, which is not mentioned in any contract, all tests will still pass. Thus the field was safe to be removed. No consumer was using or expecting it.
 
 It was great to see how other teams use the technique. The provided examples were using [Pact](https://docs.pact.io/) where the consumers write the contracts in the programming language of their choice. I use [Spring Cloud Contract](https://cloud.spring.io/spring-cloud-contract/) where the consumers write the contracts in a [DSL](https://en.wikipedia.org/wiki/Domain-specific_language). One of the arguments for Spring Cloud Contract was the missing support for messaging in Pact, though Pact will also support messaging in a future version.
 
@@ -97,7 +97,7 @@ A walkthrough of the Kata in Ruby by Sandi Metz, which I highly recommend, can b
 ### Connascence
 What followed was a presentation of the Kata [Red, green ... what now?!](https://silkandspinach.net/2015/05/20/red-green-what-now/) by Kevin Rutherford. [Connascence](http://connascence.io/) is a software quality metric that measures coupling between entities. If a method accepts two `String` types then we have `Connascence of Position`, thus the order of the arguments is important.
 
-If we have `method(String name, String mail)` we might accidentially switch the order and a consumer could supply the mail as the first argument instead of the name. The solution would be to pass an Object such as `User` or use different domain types such as `Mail` and `Name`.
+If we have `method(String name, String mail)` we might accidentally switch the order and a consumer could supply the mail as the first argument instead of the name. The solution would be to pass an Object such as `User` or use different domain types such as `Mail` and `Name`.
 
 I've already heard of the term in an awesome [talk by the late Jim Weirich](https://www.youtube.com/watch?v=22vYwcfQnk8) a while ago and the session served as a nice refresher on the topic.
 
@@ -109,7 +109,7 @@ A discussion I wanted to have at the beach. Since Uncle Bob regards it as [count
 
 paint a picture of how getting into a flow state is not helpful and discussion might be warranted.
 
-You might also call it _being in the zone_ or _the tunnel_. Some participants have never experienced flow and others avoid to enter it during work hours. Modern approaches such as Pair- or Mob-Programming make getting into the zone impossible.
+You might also call it _being in the zone_ or _the tunnel_. Some participants have never experienced flow and others avoid entering it during work hours. Modern approaches such as Pair- or Mob-Programming make getting into the zone impossible.
 
 We discussed how sitting in the corner with your headphones on, not wanting to be disturbed by anyone, is probably bad since it squelches conversation and makes other developers or the business afraid to raise questions. Additionally, if someone needs to have a ramp up time of 15min to get back into the zone or cannot be disturbed while holding an algorithm in her head it's a sign that the code is way too complicated and needs to be broken down into smaller parts.
 
@@ -117,9 +117,9 @@ We jokingly concluded the discussion as somewhat boring since the participants o
 
 ### TDD for kids
 
-We can write formulas for Google Spreadsheets in JavaScript! (See `Tools -> Script editor`). The session showed how it's a great way to teach TDD to your kids (or to managers who definitely know spreadsheets). Thus with an `if true` check and conditional formatting we can do TDD. Also a reminder on how the only thing necessary to do testing is an a way to build an `assert true` statement.
+We can write formulas for Google Spreadsheets in JavaScript! (See `Tools -> Script editor`). The session showed how it's a great way to teach TDD to your kids (or to managers who definitely know spreadsheets). Thus with an `if true` check and conditional formatting we can do TDD. Also a reminder on how the only thing necessary to do testing is a way to build an `assert true` statement.
 
-To to get you started with the [Roman numerals Kata](http://codingdojo.org/kata/RomanNumerals/) have a look [here](https://docs.google.com/spreadsheets/d/1_3f1iDn-Jwp1Q-a5yMPnbWe6glq2kuIU-ltjvNjCRrU/edit?usp=sharing). One of the best sessions.
+To get you started with the [Roman numerals Kata](http://codingdojo.org/kata/RomanNumerals/) have a look [here](https://docs.google.com/spreadsheets/d/1_3f1iDn-Jwp1Q-a5yMPnbWe6glq2kuIU-ltjvNjCRrU/edit?usp=sharing). One of the best sessions.
 
 ## Conclusion
 

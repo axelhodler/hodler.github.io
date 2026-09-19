@@ -19,7 +19,7 @@ const externalQueue = sqs.Queue.fromQueueArn(this, 'ExternalQueue',
     'arn:aws:sqs:eu-central-1:123456789101:ExternalQueueName')
 {% endhighlight %}
 
-Two queues, one in our account one in another account. We need an IAM role allowed to access both queues.
+Two queues, one in our account, one in another account. We need an IAM role allowed to access both queues.
 
 If we are using ECS Fargate the role is the `taskRole` of our task definition.
 
@@ -40,9 +40,9 @@ ourQueue.grantConsumeMessages(role)
 externalQueue.grantConsumeMessages(role)
 {% endhighlight %}
 
-For `OurQueue` we either configure the queue to allow the IAM role to access __or__ we allow the role to access the queue. One side is enough.
+For `OurQueue` we either configure the queue to allow the IAM role to access it __or__ we allow the role to access the queue. One side is enough.
 
-As for `ExternalQueue`, using cross-account access, our IAM role must have the rights to access the queue __and__ the queue allows our role to access it.
+As for `ExternalQueue`, using cross-account access, our IAM role must have the rights to access the queue __and__ the queue must allow our role to access it.
 
 The names of the queues need to be provided to our service. In Fargate we use the `environment` properties of our `taskImageOptions` to provide them as environment variables.
 

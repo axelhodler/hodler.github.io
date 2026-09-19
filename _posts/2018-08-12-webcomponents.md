@@ -19,11 +19,11 @@ Web components are not tied to any framework. They make use of HTML, CSS and Jav
 
 For our example we'll be using a modified and stripped down example by [Wolfram Kriesing](https://x.com/wolframkriesing/status/1026075696748220417), who did a terrific job explaining the concept at [BusConf 2018](http://www.bus-conf.org/).
 
-Our goal is to display a `h1` tag with an icon to the left. The icon should produce a link to the heading in our browsers search bar. The result is similar to what we see when we hover on any of the headings (take `Setup` for example) in [a README.md file](https://github.com/axelhodler/hodler.github.io/blob/master/README.md) on GitHub.
+Our goal is to display an `h1` tag with an icon to the left. The icon should produce a link to the heading in our browser's search bar. The result is similar to what we see when we hover on any of the headings (take `Setup` for example) in [a README.md file](https://github.com/axelhodler/hodler.github.io/blob/master/README.md) on GitHub.
 
 We can preview the result of what we're going to create on [GitHub Pages](https://github.com/axelhodler/webcomponent)
 
-Using a web component makes sense because we will be, similar to the usual README, use the element multiple times.
+Using a web component makes sense because we will, similar to the usual README, use the element multiple times.
 
 Our web component will have two main parts. The markup and the behavior. The markup can be divided into style and structure.
 
@@ -45,11 +45,11 @@ Our web component will have two main parts. The markup and the behavior. The mar
 </h1>
 {% endhighlight %}
 
-Via css we're specifying hidden visibility on anchor tags (`a`) and make them visible when hovering over a `h1` tag.
+Via css we're specifying hidden visibility on anchor tags (`a`) and making them visible when hovering over an `h1` tag.
 
 We make use of [Shadow DOM](https://developers.google.com/web/fundamentals/web-components/shadowdom). Shadow DOM allows us to encapsulate, or rather _shadow_, the markup structure, style and behavior of a component hidden from the rest of the page. Thus styles applied to the shadowed component won't leak out to the page and page styles won't bleed in. As a result the styles above will not be applied to `h1` and `a` tags outside of our component.
 
-Additionally name conflicts are harder since `document.querySelector()` won't return nodes in the components shadow DOM.
+Additionally, name conflicts are less likely since `document.querySelector()` won't return nodes in the component's shadow DOM.
 
 Our goal is to use the following in our `index.html` file.
 
@@ -116,7 +116,7 @@ As a nice addition there are `slots`. A slot allows us to define placeholders in
 </div>
 {% endhighlight %}
 
-To show it's usage
+To show its usage
 
 {% highlight html %}
 <ah-h1 title="License">
@@ -130,7 +130,7 @@ To show it's usage
 
 We can grab [QUnit](https://qunitjs.com/) and start testing. QUnit might seem like an "outdated" choice but it's, at the time of this writing, still used by [jQuery](https://jquery.com/) and the testing guide of [ember](https://guides.emberjs.com/release/testing/). It should be a stable choice for the future.
 
-A simple test suite, verifying the two main properties of the web component might start as follows.
+A simple test suite, verifying the two main properties of the web component, might start as follows.
 
 {% highlight javascript %}
 let component
@@ -176,6 +176,6 @@ QUnit.test("component link anchors on title", assert => {
 
 In the end we access the `shadowRoot` of the element and find the property we want to assert on via `querySelector`. Easy enough for now.
 
-Of course the example above might be considered simplistic. There are no HTTP request and the components are not nested (components within components within components...)
+Of course the example above might be considered simplistic. There are no HTTP requests and the components are not nested (components within components within components...)
 
 But for now the above should serve as an introductory example.

@@ -42,7 +42,7 @@ For side projects I was using SwiftUI and Vue.js on the client and vercel.com, w
 * Google Cloud: Functions, Authentication
 * Datadog
 * Concourse CI
-* Github actions
+* GitHub Actions
 * Bitrise
 * SendGrid
 * Nuxt.js
@@ -50,9 +50,9 @@ For side projects I was using SwiftUI and Vue.js on the client and vercel.com, w
 
 ## Summary
 
-SwiftUI is great, depending on how demanding the UX team is one still has to dive deeply into UIKit to create heavily customized elements. Diving into UIKit, even for people with previous knowledge, is tedious and in my opinion the cost is not worth the benefit. In private projects I would only use what SwiftUI has to offer. If something is not (yet) supported it seems simpler to find a different approach to solve it with SwiftUI before diving into UIKit.
+SwiftUI is great. Depending on how demanding the UX team is, one still has to dive deeply into UIKit to create heavily customized elements. Diving into UIKit, even for people with previous knowledge, is tedious and in my opinion the cost is not worth the benefit. In private projects I would only use what SwiftUI has to offer. If something is not (yet) supported it seems simpler to find a different approach to solve it with SwiftUI before diving into UIKit.
 
-Having had experiences with Angular, React and Ember working with Vue.js is still a blast. With Nuxt Content it was easy to migrate a static page using Jekyll to static content plus webapp in Vue.js.
+Having had experiences with Angular, React and Ember, working with Vue.js is still a blast. With Nuxt Content it was easy to migrate a static page using Jekyll to static content plus webapp in Vue.js.
 
 Spring Boot, together with IntelliJ, is a great tool and can show iOS developers what could be possible with Xcode and might be in the future.
 

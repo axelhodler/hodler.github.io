@@ -6,7 +6,7 @@ description: ""
 category:
 tags: []
 ---
-In some projects we encounter configurations that are stored in the [VCS](https://en.wikipedia.org/wiki/Version_control). If it's, `.xml`, `.yaml` or `.properties` etc. does not matter. As an example consider a typical `config.json` file
+In some projects we encounter configurations that are stored in the [VCS](https://en.wikipedia.org/wiki/Version_control). Whether it's `.xml`, `.yaml` or `.properties` does not matter. As an example consider a typical `config.json` file
 
 {% highlight json %}
 {
@@ -16,7 +16,7 @@ In some projects we encounter configurations that are stored in the [VCS](https:
 }
 {% endhighlight %}
 
-There are multiple issues with this approach. The credentials could be confidential and different between environments. For example a developer might want to connect to his own database. The settings differ across platforms in use. To connect to a USB port on GNU/Linux you would use a name like `/dev/ttyACM0`. While on OSX it's `/dev/tty.usbmodem1A1211` and on Windows `COM7`.
+There are multiple issues with this approach. The credentials could be confidential and different between environments. For example, a developer might want to connect to his own database. The settings differ across platforms in use. To connect to a USB port on GNU/Linux you would use a name like `/dev/ttyACM0`, while on OSX it's `/dev/tty.usbmodem1A1211` and on Windows `COM7`.
 
 What we see happening is developers edit these files to their liking and _try_ to not check their changes into version control. Sooner or later these files will be checked in accidentally. Even if it never happens, thinking about not forgetting it is just another constant burden on the mental capacities of the developer.
 
@@ -26,7 +26,7 @@ Others, well versed with [Git](https://git-scm.com/), will try the following to 
 git update-index --assume-unchanged config.json
 {% endhighlight %}
 
-Now we at least avoid checking in our personal settings. That is until another developer decides to change the structure of the file and on the next pull from remote you will see
+Now we at least avoid checking in our personal settings. That is, until another developer decides to change the structure of the file and on the next pull from remote you will see
 
 {% highlight java %}
 error: Your local changes to the following files would be overwritten by merge:
@@ -52,7 +52,7 @@ The gist of the article is the following quote
 
 > A litmus test for whether an app has all config correctly factored out of the code is whether the codebase could be made open source at any moment, without compromising any credentials.
 
-Now we could go through the code base and replace every read on the config file with environment variable usage. Doing this will take time, you probably don't know in what places the config file is used. Worse, it might break existing functionality. Then it has to be prioritized by the business and will probably become a [Planned Refactoring](http://martinfowler.com/articles/workflowsOfRefactoring/#planned) ticket to wander off into the depths of the backlog. Only to be implemented by our grandchildren.
+Now we could go through the code base and replace every read on the config file with environment variable usage. Doing this will take time. You probably don't know in what places the config file is used. Worse, it might break existing functionality. Then it has to be prioritized by the business and will probably become a [Planned Refactoring](http://martinfowler.com/articles/workflowsOfRefactoring/#planned) ticket to wander off into the depths of the backlog. Only to be implemented by our grandchildren.
 
 As a proponent of taking tiny steps I suggest another approach. Let's first remove the biggest pain point. The fact that the `config.json` is in version control. Let's generate the file when running the program.
 
@@ -64,7 +64,7 @@ The best case would be if you already have a `run.sh` script which hides how the
 npm start
 {% endhighlight %}
 
-We can extend it to generate the `config.json` using the environment variables. Lets first make sure the environment variables are set when starting the script.
+We can extend it to generate the `config.json` using the environment variables. Let's first make sure the environment variables are set when starting the script.
 
 {% highlight bash %}
 set -e
@@ -83,7 +83,7 @@ Set it with
 export SERIAL_PORT=/dev/ttyACM0
 {% endhighlight %}
 
-Now lets use the environment variable above. The `config.json` file can be created via the `tee` command.
+Now let's use the environment variable above. The `config.json` file can be created via the `tee` command.
 
 {% highlight bash %}
 rm -f config.json
@@ -96,7 +96,7 @@ tee -a config.json >/dev/null <<EOF
 EOF
 {% endhighlight %}
 
-We recreate the config file on every run with the current settings. The direct access of the `config.json` file in the codebase can now be replaced bit by bit as you stumble over them by using the defined environment variables.
+We recreate the config file on every run with the current settings. The direct accesses of the `config.json` file in the codebase can now be replaced bit by bit as you stumble over them by using the defined environment variables.
 
 You can define the environment variables to be always set in your `.bashrc` file or just create an alias as follows
 

@@ -6,7 +6,7 @@ title: "Who Moved My Cheese - Spencer Johnson"
 
 Quick read. One can go through it in about an hour. The content is a parable which divides people into four categories depending on how they react to change. Some adapt quickly, some slowly and some don't.
 
-The gist is one should not resist change even if the adaption phase is hard.
+The gist is one should not resist change even if the adaptation phase is hard.
 
 > The fastest way to change is to laugh at your own folly - then you can let go and quickly move on
 

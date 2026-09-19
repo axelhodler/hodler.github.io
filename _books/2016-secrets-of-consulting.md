@@ -8,7 +8,7 @@ Weinberg describes consulting as the art of __influencing people at their reques
 
 If we are hired to help a team develop software as an additional programmer (staff augmentation) we won't have lots of success if we try to change the organisation while doing that.
 
-We were hired as an additional worker, not to conduct the agile transformation. In short one should not attempt to solve problems he was not hired to solve. Chances are it won't work. The frustration and unnecessary work is bad for both health and bank account.
+We were hired as an additional worker, not to conduct the agile transformation. In short, one should not attempt to solve problems he was not hired to solve. Chances are it won't work. The frustration and unnecessary work are bad for both health and bank account.
 
 ### Three laws of consulting
 
@@ -18,7 +18,7 @@ These laws are probably well known. Even to some who have not read the book.
 2. No matter how it looks at first, it's always a people problem
 3. Never forget they're paying you by the hour, not by the solution
 
-Might seem cynic at first.
+Might seem cynical at first.
 
 Give it some time.
 
@@ -45,4 +45,4 @@ Another remarkable way to find out how sure people are of the statements they ma
 * Would you risk a month's salary?
 * Would you risk $10 of your own money?
 
-The severity goes down each question. Often people are not confident enough to risk even $10 thus it's quickest to start with that one.
+The severity goes down with each question. Often people are not confident enough to risk even $10, thus it's quickest to start with that one.

@@ -17,28 +17,28 @@ Until the last year I have experienced three ways of dealing with these APIs fro
 2. Hitting the live API
 3. Check in the API responses (e.g. `.json` files) into source control
 
-The first one is by far the easiest. We make sure the application still works by manually checking if the application does what its supposed to do and whether the correct values from the APIs are used.
+The first one is by far the easiest. We make sure the application still works by manually checking if the application does what it's supposed to do and whether the correct values from the APIs are used.
 
-With the second approach we make sure the API is properly integrated without the need to manually checking it. The downside is that these APIs might be slow to respond, leading to slow tests and tests which will fail if our CI tool loses the network connection. One might also run into rate limiting issues when the API is called too often in a short amount of time. We might even incur a cost for every request since not every API is free of charge.
+With the second approach we make sure the API is properly integrated without the need to manually check it. The downside is that these APIs might be slow to respond, leading to slow tests and tests which will fail if our CI tool loses the network connection. One might also run into rate limiting issues when the API is called too often in a short amount of time. We might even incur a cost for every request since not every API is free of charge.
 
-The third approach is the one I usually encounter. With it we are neither subject of additional costs per request, slow tests or rate limiting issues. The real API is only ever hit once during the creation of the initial `.json` file. There are even tools which help us with the workflow such as [Ruby VCR](https://github.com/vcr/vcr).
+The third approach is the one I usually encounter. With it we are subject neither to additional costs per request, nor to slow tests or rate limiting issues. The real API is only ever hit once during the creation of the initial `.json` file. There are even tools which help us with the workflow such as [Ruby VCR](https://github.com/vcr/vcr).
 
 Still, one issue arises. We would not notice right away if there is a mismatch between the response in the `.json` file and the actual response. Aside from sloppiness and not checking in the correct response, e.g. with missing structure, we would also not notice directly whether the API producer breaks the API by removing fields. The latter might be improbable when working with Google APIs but is certainly possible with company internal systems or the API of smaller vendors.
 
 To mitigate the issues above a [colleague](https://x.com/maverick_1601) introduced the idea of using [Consumer Driven Contract Testing (CDCT)](https://martinfowler.com/articles/consumerDrivenContracts.html) for third party API. Since we're already using it for API we do have control over the tooling was already in place and the developers were versed in its usage.
 
-CDCT is often called _TDD for microservices_ and used as such. The API consumers (e.g. an app or another microservice) writes contracts on how they require the API to behave and thus which fields of a response is used.
+CDCT is often called _TDD for microservices_ and used as such. The API consumers (e.g. an app or another microservice) write contracts on how they require the API to behave and thus which fields of a response are used.
 
 One consumer might be interested in the age field of the user, another might only care about the address.
 
-On the provider side (a service) there will be a test which makes sure the contract is never violated. Thus if the provider removes a field from a response, which is not mentioned in any contract, all tests will still pass. The field was save to be removed. No consumer was using or expecting it. Thus for the example above one would not be able to remove the age or the address. Though removing the phone-number would be possible.
+On the provider side (a service) there will be a test which makes sure the contract is never violated. Thus if the provider removes a field from a response, which is not mentioned in any contract, all tests will still pass. The field was safe to be removed. No consumer was using or expecting it. Thus for the example above one would not be able to remove the age or the address. Though removing the phone-number would be possible.
 
-Of course we cannot give these contracts to the Google Maps API or to our legacy CRM system. These providers presumably neither care nor have the tooling in place to support CDCT. Thus on first glance using CDCT here seems odd. What we can do is create another service which acts as a replacement for the actual service during testing. The service will hold the contracts defining the required fields from the actual API. We call these services `proxies`. They never proxy requests but act as an intermediate between the API and the implementation during automated testing. The proxy project will have two jobs.
+Of course we cannot give these contracts to the Google Maps API or to our legacy CRM system. These providers presumably neither care nor have the tooling in place to support CDCT. Thus, at first glance, using CDCT here seems odd. What we can do is create another service which acts as a replacement for the actual service during testing. The service will hold the contracts defining the required fields from the actual API. We call these services `proxies`. They never proxy requests but act as an intermediate between the API and the implementation during automated testing. The proxy project will have two jobs.
 
 1. Make sure the API reponds as expected (Similar to using the real API during tests)
 2. Provide stubs to consumers (Similar to checking in the response files)
 
-Say we want to display how long it takes to drive from Stuttgart to Berlin. With the [Google Distance Matrix API](https://developers.google.com/maps/documentation/distance-matrix/start) we can get the following result. Here were using [HTTPie](https://httpie.org/).
+Say we want to display how long it takes to drive from Stuttgart to Berlin. With the [Google Distance Matrix API](https://developers.google.com/maps/documentation/distance-matrix/start) we can get the following result. Here we're using [HTTPie](https://httpie.org/).
 
 {% highlight bash %}
 http https://maps.googleapis.com/maps/api/distancematrix/json \
@@ -74,7 +74,7 @@ And our result
 
 It takes 6 hours and 18 minutes to drive from Berlin to Stuttgart.
 
-At first glance the only piece of interest to us is the value `22651`. It is the amount of seconds it takes. Our consumers, e.g. an Android App, will decide how they want to format the value for the user.
+At first glance the only piece of interest to us is the value `22651`. It is the number of seconds it takes. Our consumers, e.g. an Android App, will decide how they want to format the value for the user.
 
 We should make sure the `value` field is included in the response. Of course the documentation says it's included but we want to be extra careful. Using a [Groovy](http://groovy-lang.org/) DSL of [Spring Cloud Contract](https://github.com/spring-cloud/spring-cloud-contract) we can define the following contract.
 
@@ -137,7 +137,7 @@ The DSL in the assertions is [JSON Assert](https://github.com/marcingrzejszczak/
 
 The generated contract tests pass without us writing any implementation code. Google already did all the work for us. We're done with the first step. Verifying the API works as expected.
 
-Aside from the generated tests, which some might regard as useless in as _"Why would you want to test API you dont own?"_, we get some stubs. These stubs, which are mostly the response with some metadata as json file, can be used by our consumers to develop against. Its using [WireMock](http://wiremock.org/), a HTTP mock service, which returns the response defined in the contract when hit with the request defined in the contract. After all it was one of our initial goals to not permanentely call the real API and to have stubs which respond as the real API does.
+Aside from the generated tests, which some might regard as useless — _"Why would you want to test API you don't own?"_, we get some stubs. These stubs, which are mostly the response with some metadata as a json file, can be used by our consumers to develop against. It's using [WireMock](http://wiremock.org/), an HTTP mock service, which returns the response defined in the contract when hit with the request defined in the contract. After all it was one of our initial goals to not permanently call the real API and to have stubs which respond as the real API does.
 
 These stubs are made available to other projects via the local `.m2` repository, a git repository or from our nexus or artifactory instance. An example using the local `.m2` repository can be found in the sources at the end.
 
@@ -162,7 +162,7 @@ public class GoogleDistanceMatrixClientTest {
 }
 {% endhighlight %}
 
-Pretty straight forward. With the actual implementation, using [Feign](https://github.com/OpenFeign/feign), we should be able to make the test pass. (JsonPath is used for brevity)
+Pretty straightforward. With the actual implementation, using [Feign](https://github.com/OpenFeign/feign), we should be able to make the test pass. (JsonPath is used for brevity)
 
 {% highlight java %}
 @FeignClient(value = "google-distance-service")
@@ -210,9 +210,9 @@ assertThatJson(parsedJson).array("['rows']")
     .field("['value']").matches("\\d+");
 {% endhighlight %}
 
-The real API might return `12345` and the test would not care. Nor should it. Subsequently the test on the consumer side, which is expecting `22651` would not break.
+The real API might return `12345` and the test would not care. Nor should it. Subsequently the test on the consumer side, which is expecting `22651`, would not break.
 
-Seems were done...
+Seems we're done...
 
 Not really, try to create the following request
 

@@ -17,23 +17,23 @@ I want to have a blue logout button in my profile
 So that I can log out
 {% endhighlight %}
 
-The above is supposed to be a User Story. It’s an attempt to describe the functionality, the what, and the desired benefit, the why, for a user. After turning the User Story into an implementation the user value of the product, for example an app, should be higher than it was before. After all increasing the user value, and thus revenue in the future or now, is the goal of almost all products.
+The above is supposed to be a User Story. It’s an attempt to describe the functionality, the what, and the desired benefit, the why, for a user. After turning the User Story into an implementation the user value of the product, for example an app, should be higher than it was before. After all, increasing the user value, and thus revenue in the future or now, is the goal of almost all products.
 
-But is the User Story above a _proper_ User Story? Does it not have all the necessary semantics? Is there even such as thing as a _proper_ User Story?
+But is the User Story above a _proper_ User Story? Does it not have all the necessary semantics? Is there even such a thing as a _proper_ User Story?
 
 This article is an attempt to work with these questions.
 
-Let’s start with evaluating the _"Why?"_ part of the User Story? The reason for having the change in the first place. To give some context let’s suggest the app at hand is a note taking application from which the user can’t currently log out. The desired benefit is stated as
+Let’s start with evaluating the _"Why?"_ part of the User Story. The reason for having the change in the first place. To give some context let’s suggest the app at hand is a note taking application from which the user can’t currently log out. The desired benefit is stated as
 
 {% highlight text %}
 So that I can log out
 {% endhighlight %}
 
-It’s always helpful to as _"Why?"_ few times. Why does the user need to log out? Is it to switch the account? Is the user scared someone else is going to use the application afterwards and private notes are leaked? Does the user even want to log in at all? Don’t we all love it if an app forces us to register or log in without telling us the reason? Or do we need it because after all most apps have logout buttons and we certainly don’t want to be the outlier?
+It’s always helpful to ask _"Why?"_ a few times. Why does the user need to log out? Is it to switch the account? Is the user scared someone else is going to use the application afterwards and private notes are leaked? Does the user even want to log in at all? Don’t we all love it if an app forces us to register or log in without telling us the reason? Or do we need it because after all most apps have logout buttons and we certainly don’t want to be the outlier?
 
 Questions over questions.
 
-As a result the asking of _"Why?"_ already helps us to uncover, or to at least to get closer to, the real benefit to the user. For the sake of argument we can go with the need to switch the accounts. Maybe the user shares the device with others or has an account for business related notes and an account for private notes.
+As a result, the asking of _"Why?"_ already helps us to uncover, or to at least to get closer to, the real benefit to the user. For the sake of argument we can go with the need to switch the accounts. Maybe the user shares the device with others or has an account for business related notes and an account for private notes.
 
 The part describing the desired benefit could be modified into
 
@@ -41,7 +41,7 @@ The part describing the desired benefit could be modified into
 So that I am able to switch my account
 {% endhighlight %}
 
-Disregarding further changes for a second the User Story now reads as
+Disregarding further changes for a second, the User Story now reads as
 
 {% highlight text %}
 As a user
@@ -49,7 +49,7 @@ I want to have a blue logout button in my profile
 So that I am able to switch my account
 {% endhighlight %}
 
-We have changed the User Story to the better. It contains more truth than before. The user does not want to log out. The user wants to change the account. To log out and to log in again is one possibility to achieve it.
+We have changed the User Story for the better. It contains more truth than before. The user does not want to log out. The user wants to change the account. To log out and to log in again is one possibility to achieve it.
 
 On with the _"What?"_ part
 
@@ -61,7 +61,7 @@ Again we are going to ask a few _"Why?"_ questions. Why does the Logout button h
 
 As we might have learned in our conversation the user wants to switch the account to both have a private account and an account for business related notes.
 
-Having that knowledge we can get creative. Might a selection of accounts and the possibilities to add other accounts, a function we will find in most Email clients, be a more suitable solution for the user? If the answer is yes the User Story evolves into
+Having that knowledge, we can get creative. Might a selection of accounts and the possibilities to add other accounts, a function we will find in most Email clients, be a more suitable solution for the user? If the answer is yes, the User Story evolves into
 
 {% highlight text %}
 As a user
@@ -85,9 +85,9 @@ Let’s take a look at the part we did not yet touch
 As a user
 {% endhighlight %}
 
-Sadly it does not tell us a lot. What type of user are we talking about? A premium user, an admin, a freemium user, a non english speaking user or an unregistered guest?
+Sadly it does not tell us a lot. What type of user are we talking about? A premium user, an admin, a freemium user, a non-English-speaking user or an unregistered guest?
 
-Some projects are using [personas](https://en.wikipedia.org/wiki/Persona_(user_experience)). A fictional character to represent a user type. Consider we already have a persona which might use our app both for private and business related notes. The personas name is Meredith.
+Some projects are using [personas](https://en.wikipedia.org/wiki/Persona_(user_experience)). A fictional character to represent a user type. Consider we already have a persona which might use our app both for private and business related notes. The persona’s name is Meredith.
 
 {% highlight text %}
 As Meredith
@@ -103,13 +103,13 @@ I want to have a blue logout button in my profile
 So that I can log out
 {% endhighlight %}
 
-A lot has changed. By asking a few questions in a conversation and some creativity.
+A lot has changed, by asking a few questions in a conversation and applying some creativity.
 
-But why did we start out with the User Story in the beginning? Why does a User Story often look like this? Mostly because what has been a specification in the past is now hidden in a User Story and we are labeled more _"agile"_ because we are writing user stories. Even the wikipedia article on [User story](https://en.wikipedia.org/wiki/User_story) mentions the issue in the opening paragraph.
+But why did we start out with the User Story in the beginning? Why does a User Story often look like this? Mostly because what has been a specification in the past is now hidden in a User Story and we are labeled more _"agile"_ because we are writing user stories. Even the Wikipedia article on [User story](https://en.wikipedia.org/wiki/User_story) mentions the issue in the opening paragraph.
 
-We do not have to go with User Stories to describe the features of software. Use whatever works best with your team. But if we go into lengths writing the _As a, I want, So that_ then we should avoid doing it half-hearted.
+We do not have to go with User Stories to describe the features of software. Use whatever works best with your team. But if we go to great lengths writing the _As a, I want, So that_ then we should avoid doing it half-heartedly.
 
-Finally we should remember that in the example above the user wanted to switch accounts to have a separation between private and business related notes. It’s necessary to keep in mind creating the logout functionality is still a valid, though certainly not the best, approach to achieve the above. But if the team states having the account switcher is three times as much work as the logout button the team might decide to go with the logout button after all. Nevertheless we should not constrain the solution by stating the desired implementation right away.
+Finally we should remember that in the example above the user wanted to switch accounts to have a separation between private and business related notes. It’s necessary to keep in mind that creating the logout functionality is still a valid, though certainly not the best, approach to achieve the above. But if the team states having the account switcher is three times as much work as the logout button the team might decide to go with the logout button after all. Nevertheless we should not constrain the solution by stating the desired implementation right away.
 
 Maybe our account switcher is not the greatest solution for the user either? Maybe there is a better solution hiding in plain sight? Could we not get the same benefit from using one account with different types of notes to avoid blending the two?
 

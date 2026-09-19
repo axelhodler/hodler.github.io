@@ -6,9 +6,9 @@ description: ""
 tags: []
 ---
 
-In the next weeks I'll start supporting the [Sounce]() team as a Software Architect. The goal of Sounce is support the shopfloor environment with AI supported accoustic tests.
+In the next weeks I'll start supporting the [Sounce]() team as a Software Architect. The goal of Sounce is to support the shopfloor environment with AI-supported acoustic tests.
 
-My knowledge on AI is lets rather rudimentary.
+My knowledge of AI is rather rudimentary.
 
 At one point I have realized the best way to learn something is to try to solve a problem and to learn everything you need on the way of solving the problem. In the end you solve the problem and you learn something.
 
@@ -16,13 +16,13 @@ For quite some time I am following the development of [comma.ai](https://comma.a
 
 If we search through their Jobs page the Internship position contains a link to a calibration challenge. Reaching under 25% error on the challenge can be a way to get the internship.
 
-I don't have an interest in the internship, but definitely in learning what it takes to solve. Especially with zero clues on how to approach self driving.
+I don't have an interest in the internship, but definitely in learning what it takes to solve. Especially with zero clues on how to approach self-driving.
 
 The goal of the calibration challenge is to predict the direction of travel using a provided dashcam video.
 
 To achieve this we get 5 videos, labeled with their direction of travel using pitch and yaw angles in radians. The other 5 videos do not have labels. We need to create these labels.
 
-Already the sentences contain words I know nothing about. Pitch and yaw is some kind of aeronautics lingo. After consulting wikipedia we learn
+Already the sentences contain words I know nothing about. Pitch and yaw are some kind of aeronautics lingo. After consulting Wikipedia we learn
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Yaw_Axis_Corrected.svg" alt="pitch yaw" />
 

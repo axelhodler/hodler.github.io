@@ -9,7 +9,7 @@ tags: ["Software Development", "Agile", "People Management", "Teamwork"]
 
 [Non Violent Communication](https://en.wikipedia.org/wiki/Nonviolent_Communication) (NVC) helps us to avoid _violence_ in our language and speech. What would be considered _violent_? Blaming or diagnosing faults in others or ourselves. A path to misunderstanding, conflict and suffering. In addition NVC puts a huge focus on the helpfulness of expressing our feelings to others.
 
-We can apply NVC to the [retrospective](https://en.wikipedia.org/wiki/Retrospective). A retrospective is session at the end of the software development cycle. Often found in teams using the [SCRUM](https://en.wikipedia.org/wiki/Scrum_(software_development)) framework. The team will get together to recap what happened in the last iteration and how to improve in the next iteration. A cycle of continuous improvement. Inspect and adapt.
+We can apply NVC to the [retrospective](https://en.wikipedia.org/wiki/Retrospective). A retrospective is a session at the end of the software development cycle. Often found in teams using the [SCRUM](https://en.wikipedia.org/wiki/Scrum_(software_development)) framework. The team will get together to recap what happened in the last iteration and how to improve in the next iteration. A cycle of continuous improvement. Inspect and adapt.
 
 When we talk about issues and possible improvements in our way of doing things it is easy to stumble into communication pitfalls. One misunderstood sentence or word and we slide towards conflict instead of solving the problem.
 
@@ -25,7 +25,7 @@ The above could have been stated by a UX designer. Using the word _never_ is not
 
 > Of course we don’t follow them. They are way too complicated to implement. And you haven’t even provided the designs for mobile!
 
-A sure way to incite a conflict. Why? Because the sentence is an evaluation of the developers behaviour. What would be the response more likely.
+A sure way to incite a conflict. Why? Because the sentence is an evaluation of the developers’ behaviour. What would be a more likely response?
 
 > Thanks for telling us. Let’s get together and have the designs less complicated. As for mobile we will provide them the next day and remember it for the future.
 
@@ -43,7 +43,7 @@ Even better if an observation of how it makes someone feel is provided
 
 > I __feel sad__ and redundant at points where my design input is ignored
 
-How probable is it to get a defensive response to the above? The probability of getting a response which gets us closer to resolve the issue is way more likely.
+How probable is it to get a defensive response to the above? The probability of getting a response which gets us closer to resolving the issue is way higher.
 
 Thus it is helpful to express clear observations instead of evaluation.
 
@@ -89,7 +89,7 @@ Telling others what we don’t want is often felt as a critique.
 
 The above will lead to defensiveness in others. They believe they are being talked to directly. They might have questioned the author of the statement in the past.
 
-An addition, we can’t remember all the things we don’t want. The amount is probably infinite.
+In addition, we can’t remember all the things we don’t want. The amount is probably infinite.
 
 > I want an espresso
 
@@ -101,7 +101,7 @@ We get the gist. The initial statement could become
 
 > I want to decide the direction of the product.
 
-Candid. But hard to get empathy for it
+Candid. But hard to get empathy for it.
 
 > Questioning the decisions subtracts from my need to feel appreciated.
 
@@ -129,21 +129,21 @@ A better way would be to state the request explicitly and to express our feeling
 
 We mention how it would make us feel and offer help in accomplishing the request.
 
-If in doubt ask people what they have heard. We can learn if what we said was taken as a demand. To sum it up:
+If in doubt, ask people what they have heard. We can learn if what we said was taken as a demand. To sum it up:
 
 ### Summary
 
 It is helpful to:
 
 * express clear observations instead of evaluation
-* avoid to confuse a prediction with certainty
+* avoid confusing a prediction with certainty
 * take responsibility for our actions
 * express what we do want, not what we don’t want
 * acknowledge the difference between requests and demands
 
 Let's always be communicating. Non violently.
 
-For anyone who wants to dive deeper into the topic I suggest reading Marshall B. Rosenbergs book [Non Violent Communication](https://www.goodreads.com/book/show/560861.Non_Violent_Communication). One of the books I wish I had read a decade earlier.
+For anyone who wants to dive deeper into the topic I suggest reading Marshall B. Rosenberg’s book [Non Violent Communication](https://www.goodreads.com/book/show/560861.Non_Violent_Communication). One of the books I wish I had read a decade earlier.
 
 Additionally there’s a great audiobook read by the author himself which I have used.
 

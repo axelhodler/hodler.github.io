@@ -6,7 +6,7 @@ title: "Fundamentals of Software Architecture - Neal Ford, Mark Richards"
 
 # 1. Introduction
 
-Expectations of an architect: Make architecture decisions, Continually analyze the architecture, keep current with latest trends, ensure compliance with decisions, diverse exposure and experience, have business domain knowledge, possess interpersonal skills, understand and navigate politics.
+Expectations of an architect: Make architecture decisions, Continually analyze the architecture, keep current with the latest trends, ensure compliance with decisions, diverse exposure and experience, have business domain knowledge, possess interpersonal skills, understand and navigate politics.
 
 > Everything in software architecture is a trade-off
 
@@ -70,9 +70,9 @@ Each service encompasses a particular domain -> Well suited for domain-driven de
 
 ## Microservices Architecture
 
-Goal is decoupling. The services model their bounded context, meaning their specific domain or or workflow. Each service contains the necessary parts to operate independently, e.g. databases.
+Goal is decoupling. The services model their bounded context, meaning their specific domain or workflow. Each service contains the necessary parts to operate independently, e.g. databases.
 
-Drawbacks are the distributed nature, which include network latency, resilience requirements and security checks between the services to name some.
+Drawbacks are the distributed nature, which includes network latency, resilience requirements and security checks between the services to name some.
 
 API-Layer for service discovery and as an entry point for clients.
 
@@ -88,14 +88,14 @@ Helps to guide development teams in making the right technical choices. Gather e
 
 > address deficiencies within the architecture and take corrective action to mitigate the risk
 
-Risk Matrix: Overall impact of Risk (Low, Medium, High), Likelihood of risk occuring (Low, Medium, High)
+Risk Matrix: Overall impact of Risk (Low, Medium, High), Likelihood of risk occurring (Low, Medium, High)
 ## Self Assessment Questions
 
 ## Chapter 24
 
-The 20 minute rule states how an architect should spend at least 20 minutes a day learning about his field. What are up and coming technologies or tools? Even with a quick dive into a specific topic.
+The 20-minute rule states that an architect should spend at least 20 minutes a day learning about his field. What are up-and-coming technologies or tools? Even with a quick dive into a specific topic.
 
 The ThoughtWorks technology radar presents technologies ThoughtWorks, a technology consultancy, suggests to adopt or to stop using. The radar is divided into four sections. Techniques, such as Design Systems, Remote Mob Programming or GitOps. Tools such as Sentry, Terratest or AWS CodePipeline. Platforms such as AWS CDK, Pulumi or Azure Machine Learning. Language and Frameworks such as Combine, Angular Testing Library or Flutter for Web.
 
-Architects should maximize breath of knowledge, as is their scope of impact in an organization. Depth of knowledge is required of specialists that spend time on design instead of architecture. Meaning developers that write and test code in their specific areas of expertise.
+Architects should maximize breadth of knowledge, as is their scope of impact in an organization. Depth of knowledge is required of specialists that spend time on design instead of architecture. Meaning developers that write and test code in their specific areas of expertise.
 

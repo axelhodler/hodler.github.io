@@ -10,13 +10,13 @@ tags: ["Software Development"]
 In software engineering we like to keep things simple. The [KISS principle](https://en.wikipedia.org/wiki/KISS_principle) to _"Keep it simple stupid"_
 and [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it) because _"You aren't gonna need it"_ come to mind.
 
-There is a well known spreadsheet often referenced in articles. It displays the [Top 25 Automakers by Market Cap](https://docs.google.com/spreadsheets/d/1HflVng6sYIb6Gs4pOKiDGtqU5YJ2-hgdM4pRNaT62gs/edit#gid=1052727546). The Market Cap translates to what the stock market thinks the company is worth.
+There is a well-known spreadsheet often referenced in articles. It displays the [Top 25 Automakers by Market Cap](https://docs.google.com/spreadsheets/d/1HflVng6sYIb6Gs4pOKiDGtqU5YJ2-hgdM4pRNaT62gs/edit#gid=1052727546). The Market Cap translates to what the stock market thinks the company is worth.
 
-For a while now the chart is being led by Tesla. Why? Because the market thinks Tesla is worth that much. Is it rational or reasonable? Going into arguments one might hear Tesla has a lot of advantages. Access to cheap capital. Battery supply and technology. Software. Vertical integration. Huge amounts of collected data. And of course a CEO which most people know by name. Elon Musk.
+For a while now the chart is being led by Tesla. Why? Because the market thinks Tesla is worth that much. Is it rational or reasonable? Going into arguments one might hear Tesla has a lot of advantages. Access to cheap capital. Battery supply and technology. Software. Vertical integration. Huge amounts of collected data. And of course a CEO whom most people know by name. Elon Musk.
 
 Let's think about overtaking Tesla from the perspective of what is often referred to as "legacy automakers". Where would they start?
 
-The legacy automaker does not need to start with building it's own [self driving chip](https://www.theverge.com/2019/4/22/18511594/tesla-new-self-driving-chip-is-here-and-this-is-your-best-look-yet) due to some differences with Nvidia. It might be possible to take smaller steps.
+The legacy automaker does not need to start with building its own [self-driving chip](https://www.theverge.com/2019/4/22/18511594/tesla-new-self-driving-chip-is-here-and-this-is-your-best-look-yet) due to some differences with Nvidia. It might be possible to take smaller steps.
 
 During a SpaceX event [Elon Musk stated](https://x.com/Erdayastronaut/status/1203840982497792005):
 
@@ -30,7 +30,7 @@ Can we apply that philosophy to other fields?
 
 Why not? Remembering the small steps: Let's take a trivial example such as newsletter registrations. Not rocket science.
 
-The following forms will be in german. Sorry for that. There is no need to translate the content. It’s enough to give us a rough overview of the amount of text and input fields. In short. Complexity.
+The following forms will be in German. Sorry for that. There is no need to translate the content. It’s enough to give us a rough overview of the amount of text and input fields. In short. Complexity.
 
 Starting with [Mercedes-Benz](https://newsletter.mercedes-benz.de/anmeldung/).
 
@@ -38,7 +38,7 @@ Starting with [Mercedes-Benz](https://newsletter.mercedes-benz.de/anmeldung/).
 
 We can select topics we are interested in, such as sports, design, lifestyle and more. Required.
 
-The we get asked for a salutation, an optional honorific, given name, surname and of course the e-mail address.
+Then we get asked for a salutation, an optional honorific, given name, surname and of course the e-mail address.
 
 The text on the bottom informs us about some legal implications.
 
@@ -116,7 +116,7 @@ On with [Porsche](https://contact.porsche.com/germany/dialog/newsletter/subscrib
 
 Salutation, optional honorific, given name, surname and e-mail.
 
-Although we are asked for our country. The choices in the german version are Germany and Austria. Radio buttons would have improved that.
+Although we are asked for our country. The choices in the German version are Germany and Austria. Radio buttons would have improved that.
 
 Seven inputs. Six required.
 <br>
@@ -132,9 +132,9 @@ How about [Opel](https://www.opel.de/tools/newsletter.html)?
 <img src="https://www.dropbox.com/s/kwko08j3ehvz4y6/opel_newsletter.jpeg?raw=1" class="image__left"/>
 
 
-Wait? Seems they are not asking for the honorific. Thus no optional fields. Thumbs up.
+Wait. Seems they are not asking for the honorific. Thus no optional fields. Thumbs up.
 
-One could guess there are some doctors and professors driving an Opel but the experience of Opel might differ. As a result we have to enter the e-mail twice. After all if Opel expects users to not have a PhD they might misspell their e-mail. Joking aside. Leaving the honorific reduces complexity. Although they relinquish their lead a few input fields later by asking for the e-mail twice.
+One could guess there are some doctors and professors driving an Opel, but the experience of Opel might differ. As a result we have to enter the e-mail twice. After all if Opel expects users to not have a PhD they might misspell their e-mail. Joking aside. Leaving the honorific reduces complexity. Although they relinquish their lead a few input fields later by asking for the e-mail twice.
 
 Summarised: Five inputs. All of them required.
 
@@ -148,13 +148,13 @@ We get that all the info is used somewhere. If only for greeting the user proper
 
 Would it be possible without it?
 
-How does [Tesla](https://www.tesla.com/de_DE/updates), do it?
+How does [Tesla](https://www.tesla.com/de_DE/updates) do it?
 
 <img src="https://www.dropbox.com/s/zcljgy9z01cce0m/tesla_newsletter.png?raw=1" class="image__left"/>
 
 One simple field. No legal texts. No checkboxes. Only a field for the mail and one button to confirm your choice.
 
-Leaving enough space for a picture of a car. The product you are interested in. Probably the reason for you registration in the first place.
+Leaving enough space for a picture of a car. The product you are interested in. Probably the reason for your registration in the first place.
 
 Clean design. It’s also a signup that fits into a single screen on a smartphone. No scrolling required.
 
@@ -170,6 +170,6 @@ Moving to other markets also becomes easier. If we are launching in Korea we won
 
 As an addition we avoid edge cases dealing with users who are addressed by a single name ([mononym](https://en.wikipedia.org/wiki/Mononymous_person)).
 
-Now can we just remove the fields, or make them optional, and be done with it? Probably not because some systems might require the data and do not expect a firstname to be without a value. Now we're in the position to decide what are the priorities. There are always opportunity costs. Are newsletter registrations something the company should spend time and money on? Only the company can decide.
+Now can we just remove the fields, or make them optional, and be done with it? Probably not because some systems might require the data and do not expect a first name to be without a value. Now we're in the position to decide what the priorities are. There are always opportunity costs. Are newsletter registrations something the company should spend time and money on? Only the company can decide.
 
 Let's hope the article helps to make the decision easier and to avoid the pitfalls again when redesigning or overhauling these systems in the future.

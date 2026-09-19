@@ -8,7 +8,7 @@ tags: []
 
 At my first _real_ job, back in 2014, we were using the version control system svn for the backend. The mainline branch - think master or main in git terms - was called `trunk`.
 
-Every developer pushed changes straight to mainline (`trunk`). There was no code review before adding changes to mainline. Me, having worked with git previously - in fact most projects in the company where using git already - thought this was subpar. Almost awful. Not the way things are done in modern software development.
+Every developer pushed changes straight to mainline (`trunk`). There was no code review before adding changes to mainline. Me, having worked with git previously - in fact most projects in the company were using git already - thought this was subpar. Almost awful. Not the way things are done in modern software development.
 
 Later someone was added to the team in charge of moving us to continuous delivery. When discussing branching strategies yours truly, being an avid reader of [hackernews](https://news.ycombinator.com/) and all things development related, was eager to push for Gitflow.
 
@@ -24,9 +24,9 @@ In our case it was after every sprint. A release every two weeks - If, and only 
 
 Of course every two weeks is better than every few months. And every week is better than every two weeks. But not what I would consider continuous today.
 
-We ended up having feature branches, some short lived (days), some long lived (months). These changes were moved to mainline after one or more reviews.
+We ended up having feature branches, some short-lived (days), some long-lived (months). These changes were moved to mainline after one or more reviews.
 
-The workflow had its issues but was, from my perspective, way better than to contributing straight into mainline.
+The workflow had its issues but was, from my perspective, way better than contributing straight into mainline.
 
 Years later, when Microservices were all the rage, I watched a talk by [Sam Newman](https://www.youtube.com/watch?v=lqRQYEHAtpk&t=2425s)
 
@@ -36,7 +36,7 @@ Some of his comments on Gitflow in the talk
 
 > I don't understand all this because I'm old and quite stupid
 
-> Every single picture that shall explain to me how Gitflow works just makes we want to kill myself
+> Every single picture that shall explain to me how Gitflow works just makes me want to kill myself
 
 Well the last one is an exaggeration. But taking the
 
@@ -46,9 +46,9 @@ from a guy of his calibre is quite humbling.
 
 Today I would agree.
 
-Getting to _"short lived"_ _"feature branches"_ is hard. Both due to a definition what _"short lived"_ is exactly and the common question how the whole _"feature"_ - it's a _"feature branch"_ after all, can be implemented in a few days, or even hours.
+Getting to _"short lived"_ _"feature branches"_ is hard. Both due to a definition of what _"short lived"_ is exactly and the common question of how the whole _"feature"_ - it's a _"feature branch"_ after all, can be implemented in a few days, or even hours.
 
-If we get quick reviews, meaning colleagues get into the review ASAP instead of once or twice a day, we might get small branches and thus small pull requests (PR)
+If we get quick reviews, meaning colleagues get into the review ASAP instead of once or twice a day, we might get small branches and thus small pull requests (PR).
 
 * Branch -> Fix a flaky test -> PR
 * Branch -> Fix a typo in the docs -> PR
@@ -83,7 +83,7 @@ Or as Kent Beck calls it
 
 If we don't get quick reviews the developers will bundle these changes into one big change. This automatically leads to longer lived feature branches.
 
-To avoid the hassle of slow reviews we can try adding a second pair of eyes right away by pair programming or even multiple pair of eyes by mob programming.
+To avoid the hassle of slow reviews we can try adding a second pair of eyes right away by pair programming or even multiple pairs of eyes by mob programming.
 
 Instead of having multiple branches we push small changes into main, or master, or trunk. Together as a team.
 

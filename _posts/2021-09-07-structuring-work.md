@@ -28,7 +28,7 @@ The common approach developers take is
 
 1. Create the button
 2. Have the button open a modal (a sheet in iOS terminology) - Pressing Done (_Fertig_) closes the sheet - The view on the left is displayed again.
-3. Layout the content of the sheet
+3. Lay out the content of the sheet
 
 This is fine. It gets the job done.
 
@@ -55,13 +55,13 @@ What if we were to change the order of the steps in our approach?
 We start with the content of the sheet. No need to commit to the sheet element yet. Maybe the designers will show up a few minutes later with the decision
 to have the view use the full screen?
 
-If we layout the content first we are able to merge. Due to SwiftUI we also do not need to have a button to allow us to see our view. That is what previews are for.
+If we lay out the content first, we are able to merge. Due to SwiftUI we also do not need to have a button to allow us to see our view. That is what previews are for.
 
-The current state is mergeable to master. Even if there is some pending release it would not matter. After all, the view does not have an entry point yet. We did not implement the button. No user will be able to see the view. We can collect feedback from other developers or designers on the contents of the sheet without the necessity to think on how the user gets there.
+The current state is mergeable to master. Even if there is some pending release it would not matter. After all, the view does not have an entry point yet. We did not implement the button. No user will be able to see the view. We can collect feedback from other developers or designers on the contents of the sheet without the necessity to think about how the user gets there.
 
 As a result the approach changes to
 
-1. Layout the content of the sheet
+1. Lay out the content of the sheet
 2. Create the button
 3. Have the button open the sheet
 

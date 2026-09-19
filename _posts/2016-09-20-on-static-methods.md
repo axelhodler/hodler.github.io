@@ -6,15 +6,15 @@ description: ""
 category:
 tags: []
 ---
-Recently I got asked by a co-worker on how he would go about testing the invocation of a static method in some legacy codebase. Not as easy as one might guess initially. We went for the [Subclass and Override Technique]({% post_url 2015-12-07-testing-java-legacy-code-with-seams %}). Of course a conversation on whether `static` should be used at all ensues...
+Recently I got asked by a co-worker how he would go about testing the invocation of a static method in some legacy codebase. Not as easy as one might guess initially. We went for the [Subclass and Override Technique]({% post_url 2015-12-07-testing-java-legacy-code-with-seams %}). Of course a conversation on whether `static` should be used at all ensues...
 
-After all you need special techniques or tools such as [PowerMock](https://github.com/jayway/powermock) to test them or create wrappers as described in [Don't Mock What You Do Not Own]({% post_url 2015-11-15-do-not-mock-what-you-do-not-own %}).
+After all, you need special techniques or tools such as [PowerMock](https://github.com/jayway/powermock) to test them or create wrappers as described in [Don't Mock What You Do Not Own]({% post_url 2015-11-15-do-not-mock-what-you-do-not-own %}).
 
 The discussion on `static` has been had multiple times all over the internet. The answer is usually the following:
 
 > There are times when using static is fine and times when it's not.
 
-Thus were stuck with the usual `It depends` answer.
+Thus we're stuck with the usual `It depends` answer.
 
 I believe one of the best answers to the discussion was provided by Misko Hevery in a comment to his post [Static Methods are Death to Testability](http://misko.hevery.com/2008/12/15/static-methods-are-death-to-testability/). To [quote](http://misko.hevery.com/2008/12/15/static-methods-are-death-to-testability/#comment-1029):
 

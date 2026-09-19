@@ -13,7 +13,7 @@ This post requires knowledge of what a Smart Contract is and how to deploy one.
 
 # Basics
 
-To learn why we will probably use a library for interfacing with the Smart Contract a basic understanding of the usage of [JSON-RPC](https://github.com/ethereum/wiki/wiki/JSON-RPC) in Ethereum is necessary.
+To learn why we will probably use a library for interfacing with the Smart Contract, a basic understanding of the usage of [JSON-RPC](https://github.com/ethereum/wiki/wiki/JSON-RPC) in Ethereum is necessary.
 
 Let's unveil the supposed magic behind what almost all Ethereum libraries do to interact with the blockchain. Suppose we need to know the `gasLimit` (maximum amount of computational effort the transactions in a block are allowed to have) of the latest block. Using [curl](https://curl.haxx.se/) and piping its result to a JSON parser such as [jq](https://stedolan.github.io/jq/) would, considering we run an Ethereum node on localhost port 8545, look as follows
 
@@ -22,7 +22,7 @@ curl --silent -X POST -H "Content-Type: application/json"\
   --data '{"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["latest", true],"id":1}' localhost:8545 | jq .result.gasLimit
 {% endhighlight %}
 
-The above will yield `"0x4c4b3c"`, which is [hex-encoded](https://en.wikipedia.org/wiki/Hexadecimal). Since we probably want to read it as a decimal we can add another pipe and the final command becomes
+The above will yield `"0x4c4b3c"`, which is [hex-encoded](https://en.wikipedia.org/wiki/Hexadecimal). Since we probably want to read it as a decimal, we can add another pipe and the final command becomes
 
 {% highlight bash %}
 curl --silent -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["latest", true],"id":1}' localhost:8545\
@@ -32,7 +32,7 @@ curl --silent -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.
 
 Leading to the readable result of `4999996`.
 
-These steps involved are a good showcase on why to introduce an abstraction. Almost all libraries will provide convenient interfaces for these RPC calls.
+The steps involved are a good showcase of why to introduce an abstraction. Almost all libraries will provide convenient interfaces for these RPC calls.
 
 Using the library [web3j](https://web3j.io) the command above will translate to
 
@@ -41,11 +41,11 @@ web3j.ethGetBlockByNumber(DefaultBlockParameter.valueOf("latest"),
   true).send().getBlock().getGasLimit();
 {% endhighlight %}
 
-Still a lot of steps, and from a software-engineering perspective a violation of the [Law of Demeter](https://en.wikipedia.org/wiki/Law_of_Demeter), yet less error prone and more convenient. Additionally, if our implementation depends on the functionality above we will most likely create an abstraction such as `ethereumGateway.currentGasLimit()` anyway.
+Still a lot of steps, and from a software-engineering perspective a violation of the [Law of Demeter](https://en.wikipedia.org/wiki/Law_of_Demeter), yet less error-prone and more convenient. Additionally, if our implementation depends on the functionality above, we will most likely create an abstraction such as `ethereumGateway.currentGasLimit()` anyway.
 
 # Using web3j
 
-Let's take web3j for a spin to interact with a simple record keeping contract. What the contract does is keep track of some kind of `Deliverable`, which could be a shipping container. It makes use of access controls to only allow the owner of the contract to modify its state. We achieve this with the creation of a `onlyByOwner` _function modifier_. The owner can `store` a new Deliverable and also change its status to `delivered`. Using the shipping container example this means the container has reached is destination. Querying the contract for the status of a `Deliverable` is possible by anyone using the `statusFor` function. If the `status` of a `Deliverable` is _1_ we can consider it delivered.
+Let's take web3j for a spin to interact with a simple record keeping contract. What the contract does is keep track of some kind of `Deliverable`, which could be a shipping container. It makes use of access controls to only allow the owner of the contract to modify its state. We achieve this with the creation of an `onlyByOwner` _function modifier_. The owner can `store` a new Deliverable and also change its status to `delivered`. Using the shipping container example this means the container has reached its destination. Querying the contract for the status of a `Deliverable` is possible by anyone using the `statusFor` function. If the `status` of a `Deliverable` is _1_ we can consider it delivered.
 
 {% highlight javascript %}
 contract Deliverables {
@@ -133,15 +133,15 @@ public void deliverables_can_be_delivered() throws Exception {
 }
 {% endhighlight %}
 
-Let's di-sect the code
+Let's dissect the code
 
 {% highlight java %}
 Deliverables.load(address, web3j, credentials, gasPrice, gasLimit);
 {% endhighlight %}
 
-We load the contract by providing its `address` an instance of `web3j`, the `credentials` (an unlocked wallet), the `gasPrice` and `gasLimit`.
+We load the contract by providing its `address`, an instance of `web3j`, the `credentials` (an unlocked wallet), the `gasPrice` and `gasLimit`.
 
-Be aware that `credentials`, `gasPrice` or `gasLimit` would not really be necessary if we only intended to read from the contract. For example when using the `statusFor` function. Query operations on a contract are free in as they do not need a transaction and thus have no gas cost. The generated method requires these arguments though.
+Be aware that `credentials`, `gasPrice` or `gasLimit` would not really be necessary if we only intended to read from the contract. For example, when using the `statusFor` function. Query operations on a contract are free in that they do not need a transaction and thus have no gas cost. The generated method requires these arguments though.
 
 {% highlight java %}
 web3j.web3Sha3("CONTENTS").send().getResult();
@@ -149,7 +149,7 @@ web3j.web3Sha3("CONTENTS").send().getResult();
 
 We create a hash of something unique, in our example it could be the shipping receipt, using [SHA-3](https://en.wikipedia.org/wiki/SHA-3).
 
-Keep in mind we probably do not want to store full documents on the blockchain, because we would need pay for every byte in a transaction. Using hashes is a way to keep the transactions small and cheap.
+Keep in mind we probably do not want to store full documents on the blockchain, because we would need to pay for every byte in a transaction. Using hashes is a way to keep the transactions small and cheap.
 
 {% highlight java %}
 deliverables.store(deliverable).get();
@@ -173,7 +173,7 @@ Finally we query the contract for the state and verify our `Deliverable` has bee
 
 # Conclusion
 
-Having had a lot more experience with [web3.js](https://github.com/ethereum/web3.js) the _original_ library in JavaScript it sometimes feels more tedious to work with it's sister library in Java.
+Having had a lot more experience with [web3.js](https://github.com/ethereum/web3.js), the _original_ library in JavaScript, it sometimes feels more tedious to work with its sister library in Java.
 
 As an example, if we want to use our account in web3.js we would write
 
@@ -187,10 +187,10 @@ In web3j we would have to read our wallet file and pass the `Credentials` instan
 Credentials c = WalletUtils.loadCredentials("somePassword", "wallets/UTC-2017-03-31T09-19-59.503000000Z--6dc71522dfff6e05c450abe2a68e11392e31551d.json");
 {% endhighlight %}
 
-Regardless, in the end it boils down to personal taste. Of course web3.js is older, more mature and has more users than web3j, thus in the future web3j will improve too in every aspect.
+Regardless, in the end it boils down to personal taste. Of course, web3.js is older, more mature and has more users than web3j, thus in the future web3j will improve too in every aspect.
 
 There’s also ethereumJ, a Java implementation of the Ethereum protocol, meaning it includes mining capabilities and an implementation of the blockchain. web3j, calling itself lightweight, does not include these functionalities since they are not necessary for every user wanting to interface with smart contracts.
 
-As a side note, when thinking about the future of our application we should create an abstraction for any library or API we use. It will allow us to switch out the underlying implementation, without touching the modules containing the business logic, should we ever find a better way or library to interact with a smart contract. Furthermore it will enable us to use a somewhat different implementation of Smart Contracts such as the possible competitor on the Bitcoin blockchain [Rootstock](http://www.rsk.co/) or any other future Smart Contract ecosystem. Maybe even a boring database or both.
+As a side note, when thinking about the future of our application we should create an abstraction for any library or API we use. It will allow us to switch out the underlying implementation, without touching the modules containing the business logic, should we ever find a better way or library to interact with a smart contract. Furthermore, it will enable us to use a somewhat different implementation of Smart Contracts such as the possible competitor on the Bitcoin blockchain [Rootstock](http://www.rsk.co/) or any other future Smart Contract ecosystem. Maybe even a boring database or both.
 
 The post has been cross-posted on [Medium](https://medium.com/yopiter/interfacing-with-ethereum-smart-contracts-in-java-cf39b2e95b4e)

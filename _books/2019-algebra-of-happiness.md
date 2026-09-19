@@ -10,7 +10,7 @@ Work out. If you enter a meeting feeling you could kill anyone at the table it g
 
 Praise others. Express admiration to coworkers. Tell your wife you love her.
 
-Always be in the stockmarket. You are not smart enough to predict when to get in and out.
+Always be in the stock market. You are not smart enough to predict when to get in and out.
 
 Alcohol predicts unhappiness more than other factors.
 

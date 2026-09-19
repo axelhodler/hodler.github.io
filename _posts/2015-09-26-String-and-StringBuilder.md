@@ -7,7 +7,7 @@ category:
 tags: []
 ---
 
-Recently we had a short discussion about the usage of `StringBuilder` and basic String Concatenation via `+`. I have always found using String Concatenation more readable (when using a small amount of arguments to concatenate) and also friendlier towards newcomers to the Java ecosystem. On the other hand users of `StringBuilder` argument with a superior performance compared to String Concatenation. Not being sure about the performance issue but remembering having heard the Java compiler will optimize String Concatenation by using StringBuilder anyway i wanted to see this for myself.
+Recently we had a short discussion about the usage of `StringBuilder` and basic String Concatenation via `+`. I have always found using String Concatenation more readable (when using a small amount of arguments to concatenate) and also friendlier towards newcomers to the Java ecosystem. On the other hand users of `StringBuilder` argue for superior performance compared to String Concatenation. Not being sure about the performance issue but remembering having heard the Java compiler will optimize String Concatenation by using StringBuilder anyway, I wanted to see this for myself.
 
 Let's compile the following two snippets with `javac`:
 
@@ -125,4 +125,4 @@ The official docs [support that statement](http://docs.oracle.com/javase/specs/j
 
 That being said, if performance is an issue you should use `StringBuilder` when constructing Strings inside of loops. The compiler won't optimize this.
 
-Nevertheless, if the coding standards for the project dictates to use `StringBuilder` to e.g. implement the `toString()` method you can automate this in eclipse by using `Generate toString()...` and change the code style to use `StringBuilder/StringBuffer`.
+Nevertheless, if the coding standards for the project dictate using `StringBuilder` to e.g. implement the `toString()` method, you can automate this in Eclipse by using `Generate toString()...` and changing the code style to use `StringBuilder/StringBuffer`.

@@ -28,7 +28,7 @@ Socrates got an unjust death sentence. When his disciples discussed freeing him 
 
 > No one can ever know true Justice or Beauty in his mortal lifetime. He can, however, make the search for that higher knowledge his life’s work, just as Socrates did.
 
-Our soul already knows the answer, that is why we can get there by the socratic method. Applying reason to refresh our memory.
+Our soul already knows the answer, that is why we can get there by the Socratic method. Applying reason to refresh our memory.
 
 > figure out for himself that the area of a square is proportional to the second power of the length of the sides.
 
@@ -87,4 +87,4 @@ Saint Augustine
 
 14.
 
-Gerard translates Aristotle from Arabic to make them available once again to the Christian West.
+Gerard translates Aristotle from Arabic to make his works available once again to the Christian West.

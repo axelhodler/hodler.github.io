@@ -34,24 +34,24 @@ While getting into iOS development I was able to quickly pick up __Swift__ and _
 
 <hr>
 
-Once I read the statement you are only able to state you know a certain programming language if you are able to write [Fizz buzz](https://en.wikipedia.org/wiki/Fizz_buzz) in it. A low bar. It will only prove you remember the basic syntax. I would be able to write Fizz buzz in Java, Kotlin, JavaScript, Swift and Python. Mainly because I used all of them recently. For all the others I would have to brush up my knowledge for a few minutes.
+Once I read the statement that you are only able to state you know a certain programming language if you are able to write [Fizz buzz](https://en.wikipedia.org/wiki/Fizz_buzz) in it. A low bar. It will only prove you remember the basic syntax. I would be able to write Fizz buzz in Java, Kotlin, JavaScript, Swift and Python. Mainly because I used all of them recently. For all the others I would have to brush up my knowledge for a few minutes.
 
 How do you learn a programming language then? You don't need to know generics to write a simple Java command line application. You don't need to know the difference between `class` and `struct` before writing an iOS app in Swift. It will become apparent at one point in your journey. Right when you need it.
 
 Neither do you _need_ to read a book on the programming language. Is reading the book helpful? Sure, you might pick up a few tricks while reading it and remember parts of the codebase you can apply it to. Is it required? No.
 
-In my day to day work I sometimes get the question during pairing _"Would this syntax work here?"_. Even when you know the answer (Yes/No) the better answer is _"Let's write a test and see"_. The moment you have a test we can play around with the implementation details, learn what works and iteratively improve it if necessary.
+In my day-to-day work I sometimes get the question during pairing _"Would this syntax work here?"_. Even when you know the answer (Yes/No) the better answer is _"Let's write a test and see"_. The moment you have a test we can play around with the implementation details, learn what works and iteratively improve it if necessary.
 
 So what is my favorite programming language?
 
-I don't have one. Saves me quite some time when discussing what to use for a new project. What I care more about is the tooling around the language. I enjoy working more with Kotlin than with Swift because I consider IntelliJ to be superior to Xcode. But then, Xcode might be a lot easier than setting up your Haskell tooling. (To be fair it has been a while I have looked into Haskell tooling). Do I thus like Kotlin more than Swift because I enjoy working with it more? Fair enough. I guess the answer is a Yes. For now.
+I don't have one. Saves me quite some time when discussing what to use for a new project. What I care more about is the tooling around the language. I enjoy working more with Kotlin than with Swift because I consider IntelliJ to be superior to Xcode. But then, Xcode might be a lot easier than setting up your Haskell tooling. (To be fair it has been a while since I looked into Haskell tooling). Do I thus like Kotlin more than Swift because I enjoy working with it more? Fair enough. I guess the answer is a Yes. For now.
 
-What program language would you use when starting out to learn programming?
+What programming language would you use when starting out to learn programming?
 
 Depends on what you would want to do. The easiest might be where you have all the required tools, a browser, already installed. Thus JavaScript. Then again you are trying to solve a problem. It doesn't really matter in the beginning. Use what your friends use, use what the guy on YouTube uses or use what your colleagues use.
 
 In the end it is all if, else, loops and pattern matching for the functionally inclined.
 
-I reject the notion of _"Do $X to become a better programmer"_. To become a better programmer you program. You program to solve problems. Even if the problem is not having anything better to do on a lazy sunday afternoon.
+I reject the notion of _"Do $X to become a better programmer"_. To become a better programmer you program. You program to solve problems. Even if the problem is not having anything better to do on a lazy Sunday afternoon.
 
 

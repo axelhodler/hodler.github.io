@@ -22,11 +22,11 @@ public boolean canUserAccessResource(String username) {
 {% endhighlight %}
 A more verbose version can be found in the excellent course on [Programming Languages on Coursera](https://www.coursera.org/learn/programming-languages/lecture/aOQ26/optional-java-mutation)
 
-What's the issue with the code above? Try to think about if for a few seconds.
+What's the issue with the code above? Try to think about it for a few seconds.
 
 Our `allowedUsers` can be modified to allow access to users which were not specified as allowed by the original author.
 
-Tests display the the issue at hand
+Tests display the issue at hand
 
 {% highlight java %}
 @Test
@@ -42,7 +42,7 @@ public void mallory_can_be_added_to_the_allowed_users() {
 }
 {% endhighlight %}
 
-Ok. Nevermind. Instead of learning how we can alleviate the above why don't we use more modern languages which might bring us some immutability. Like [Kotlin](https://kotlinlang.org/).
+Ok. Nevermind. Instead of learning how we can alleviate the above, why don't we use more modern languages which might bring us some immutability. Like [Kotlin](https://kotlinlang.org/).
 
 The Java implementation looks as follows in Kotlin
 
@@ -83,7 +83,7 @@ authorizedUsers = listOf("Mallory")
 
 will fail.
 
-There is neither a `set` method to provide array access or the possibility to reassign `val`
+There is neither a `set` method to provide array access nor the possibility to reassign `val`.
 
 Nevertheless, we can cast it to a [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html) and do the following
 
@@ -98,7 +98,7 @@ Nevertheless, we can cast it to a [MutableList](https://kotlinlang.org/api/lates
 
 Oh snap. The actual object can be changed by another reference.
 
-In defense of Kotlin. It's stressed quite [often](https://www.youtube.com/watch?v=Uizh2WlJtnk&feature=youtu.be&t=2470) how the wording `read-only` is used instead of `immutability`.
+In defense of Kotlin, it's stressed quite [often](https://www.youtube.com/watch?v=Uizh2WlJtnk&feature=youtu.be&t=2470) how the wording `read-only` is used instead of `immutability`.
 
 Although the wording `MutableList` might suggest using `List` would be immutable.
 
@@ -134,7 +134,7 @@ Although that is something we would have to remember all the time.
 
 Would someone starting out with Kotlin realize the difference between `read-only` and `immutability` before stumbling upon it in the docs or when encountering a bug?
 
-Seems how the simplest approach to getting the issues above out of the way is by using immutability by default.
+It seems the simplest approach to getting the issues above out of the way is by using immutability by default.
 
 Code examples can be found on [GitHub](https://github.com/axelhodler/non-immutabbility-samples)
 

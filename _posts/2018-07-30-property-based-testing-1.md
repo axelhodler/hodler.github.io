@@ -121,7 +121,7 @@ public class AddTest {
 
 The `@Property` annotation will make sure the test is run multiple times. 100 times by default. While `@InRange` will generate random values inside of the specified boundaries using `min` and `max`.
 
-Because it is way to hard to have a bad implementation to catch all the random value we're ultimately forced to give up and write the proper implementation.
+Because it is way too hard to have a bad implementation catch all the random values, we're ultimately forced to give up and write the proper implementation.
 
 {% highlight java %}
 public static int add(int a, int b) {
@@ -133,7 +133,7 @@ We did it. Marvelous. Property based testing rules. Everyone is happy.
 
 Though there are a few issues with the way the concept was taught.
 
-We're going step through some of them.
+We're going to step through some of them.
 
 ### The laws of TDD were not followed
 
@@ -235,7 +235,7 @@ The only difference is we have the implementation hidden behind the `add` method
 
 All the above might leave the person new to property based testing in a mood of having learned something new, which is great, but having no direct target to apply the gained knowledge to.
 
-Once, after seeing a presentation on the topic, I have asked the speaker in private if he's using property based testing in his day to day projects. The answer has been no.
+Once, after seeing a presentation on the topic, I have asked the speaker in private if he's using property based testing in his day-to-day projects. The answer has been no.
 
 As a result you might guess I have an inherent distaste for property based testing.
 

@@ -7,11 +7,11 @@ category:
 tags: []
 ---
 
-For some time now i wanted take a dive into functional programming by working through the [SICP Book](https://mitpress.mit.edu/sicp/full-text/book/book.html), which is a classic text in computer science and older than myself. The examples in the book are using [Scheme](https://en.wikipedia.org/wiki/Scheme_(programming_language). Scheme follows a minimalist design philosophy by specifying a small standard core with powerful tools for language extension.
+For some time now I wanted to take a dive into functional programming by working through the [SICP Book](https://mitpress.mit.edu/sicp/full-text/book/book.html), which is a classic text in computer science and older than myself. The examples in the book are using [Scheme](https://en.wikipedia.org/wiki/Scheme_(programming_language)). Scheme follows a minimalist design philosophy by specifying a small standard core with powerful tools for language extension.
 
-Intrigued by a [screencast](https://www.youtube.com/watch?v=nIonZ6-4nuU) in which Kent Beck uses [TDD](https://en.wikipedia.org/wiki/Test-driven_development) to learn [CoffeeScript](https://en.wikipedia.org/wiki/CoffeeScript) i wanted to take a similar approach to learning Scheme.
+Intrigued by a [screencast](https://www.youtube.com/watch?v=nIonZ6-4nuU) in which Kent Beck uses [TDD](https://en.wikipedia.org/wiki/Test-driven_development) to learn [CoffeeScript](https://en.wikipedia.org/wiki/CoffeeScript), I wanted to take a similar approach to learning Scheme.
 
-In the following paragraphs i will describe the necessary setup steps to work through the examples following TDD.
+In the following paragraphs I will describe the necessary setup steps to work through the examples following TDD.
 
 ## Unit Testing Setup
 A search for `Scheme` and `Unit Testing` will lead you to [Ward Cunningham's Wiki](http://c2.com/cgi/wiki?SchemeUnit). With the information there we can put together a simple unit testing 'framework'.

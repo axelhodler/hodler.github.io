@@ -7,7 +7,7 @@ category:
 tags: []
 ---
 
-When creating a HTTP request we never know if the targeted resource is available. Let's look at the following example in [Kotlin](https://en.wikipedia.org/wiki/Kotlin_(programming_language)). Using [khttp](http://khttp.readthedocs.io/en/latest/) the following passes
+When creating an HTTP request we never know if the targeted resource is available. Let's look at the following example in [Kotlin](https://en.wikipedia.org/wiki/Kotlin_(programming_language)). Using [khttp](http://khttp.readthedocs.io/en/latest/) the following passes
 
 {% highlight kotlin %}
 val res = get("http://hodler.co")
@@ -34,11 +34,11 @@ It did not.
 
 We got `UnknownHostException`
 
-How would we know, without reading its implementation or the documentation, the function might throw  `UnkownHostException`?
+How would we know, without reading its implementation or the documentation, the function might throw `UnknownHostException`?
 
 Yes, through experience we might guess it can fail. But not whether it will raise an Exception or return null.
 
-Thus, if we already know something could fail shouldn't we somehow add it to the function declaration?
+Thus, if we already know something could fail, shouldn't we somehow add it to the function declaration?
 
 Using [Arrow](https://arrow-kt.io/), a functional companion to Kotlin's standard library, we create the following abstraction
 
@@ -54,13 +54,13 @@ fun fetchInfos(): Either<String, Response> {
 
 ## Either
 
-The `Either` is a well known concept in functional programming.
+The `Either` is a well-known concept in functional programming.
 
 It's used to signal whether an error can occur.
 
 While `Right`, by convention, is used to hold the values of a successful execution, `Left` is used to show something went wrong. Usually in the form of an error message.
 
-As a result the caller of the function will know from it's declaration whether a function might return an error.
+As a result the caller of the function will know from its declaration whether a function might return an error.
 
 It's not hidden from plain sight. We're forced to deal with it.
 

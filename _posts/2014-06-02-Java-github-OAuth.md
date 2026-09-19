@@ -16,7 +16,7 @@ Basically the Web Flow consists of three parts:
 2. GitHub redirects back to your site with a temporary code that can be exchanged for an access token.
 3. With the temporary code the access token to access the GitHub API can be requested.
 
-The different GitHub Java-API's all require the Access-Token. Accordingly we need to get the Access-Token first before we're able to use those libraries.
+The different GitHub Java-APIs all require the Access-Token. Accordingly we need to get the Access-Token first before we're able to use those libraries.
 
 In the following example we want to use Java, the [Spark Web Framework](https://github.com/perwendel/spark), the Rest-client [Unirest](https://github.com/Mashape/unirest-java) and the template engine [freemarker](http://freemarker.org/) to achieve the same functionality of the Ruby server in the [Basics of Authentication Guide](https://developer.github.com/guides/basics-of-authentication/).
 
@@ -47,7 +47,7 @@ Create the template `index.ftl`:
 </p>
 {% endhighlight %}
 
-Create the `FreeMarkerTemplateEngine` class, that will render the template:
+Create the `FreeMarkerTemplateEngine` class that will render the template:
 
 {% highlight java %}
 public class FreeMarkerTemplateEngine extends TemplateEngine {
@@ -97,7 +97,7 @@ get("/callback",(request, response) -> {
 });
 {% endhighlight %}
 
-Use the session code to
+Use the session code to request the access token:
 
 {% highlight java %}
 String accessToken = Unirest.post("https://github.com/login/oauth/access_token")

@@ -22,7 +22,7 @@ What the function does is irrelevant. All we need to know for now is it will thr
 
 Thus it makes sure the implementation can work with the provided input.
 
-Without going into the domain any further the assertion above is screaming we have a type in hiding. `List<Int>` should be an explicit type of our domain.
+Without going into the domain any further, the assertion above is screaming we have a type in hiding. `List<Int>` should be an explicit type of our domain.
 
 Thus we avoid having a caller run into the `IllegalArgumentException` or to depend on the correctness or presence of the `doSthWith` documentation.
 
@@ -38,7 +38,7 @@ data class ThreeItemSegment(val first: Int,
 
 Of course in reality the type would resemble a concept of the domain of our application. The name above is just an example. It's less code than writing the assertion and makes sure the values are not `null` by using the `val` keyword.
 
-The brevity of the Kotlin class should swiftly deal with the well known
+The brevity of the Kotlin class should swiftly deal with the well-known
 
 > But creating an extra class for one method signature is so much overhead!
 

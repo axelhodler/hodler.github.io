@@ -6,7 +6,7 @@ description: ""
 tags: []
 ---
 
-Checking out a new, at least to me, python codebase where the `README.md` stated
+Checking out a new, at least to me, Python codebase where the `README.md` stated
 
 {% highlight bash %}
 flake8 src/ tests/
@@ -14,7 +14,7 @@ black src/ tests/
 {% endhighlight %}
 
 [Flake8](https://flake8.pycqa.org/en/latest/index.html) is a tool for style guide enforcement. Often called a linter. A static code analysis tool.
-While [black](https://github.com/psf/black) is a python code formatter.
+While [black](https://github.com/psf/black) is a Python code formatter.
 
 Cool. Let's run these commands.
 
@@ -57,7 +57,7 @@ Let's check [C901](https://www.flake8rules.com/rules/C901.html).
 Ok, that's what the `# noqa C901` comment did.
 It told `flake` to ignore the configured complexity rules for the `validate_action` method.
 
-Awesome now I can either:
+Awesome, now I can either:
 
 * Decrease the complexity of `validate_action`
 * Google where else to put the `# noqa: C901` comment - All while taking into account the method now being split into three lines
@@ -108,6 +108,6 @@ If the team does not care too deeply these tools only add additional friction. L
 
 Especially if there are folks on the team who peruse and try these rules with the same energy a kid would apply to the candy in a candy store. Have them all.
 
-To add insult to injury - Both tools did not help us to avoid having both snake_case (the `validation_action`) and camelCase (the `currentState`).
+To add insult to injury - Both tools did not help us to avoid having both snake_case (the `validate_action`) and camelCase (the `currentState`).
 
 Probably another rule available in the docs of `flake8`. Haha.

@@ -24,7 +24,7 @@ The quickest way to pass this test would be to let the function return a hardcod
 (define (add-square-of-largest-two first-num second-num third-num) 0)
 {% endhighlight %}
 
-Now we enter the refactoring phase. The specified function signature already breaks a clean code principle. We should avoid having more than two arguments for a function. If these three arguments all belong to each other to warrant the need to be passed together then they should be put into another construct. We will choose a list and refactor the code as follows
+Now we enter the refactoring phase. The specified function signature already breaks a clean code principle. We should avoid having more than two arguments for a function. If these three arguments belong together closely enough to warrant being passed together, then they should be put into another construct. We will choose a list and refactor the code as follows
 
 {% highlight scheme %}
 (assert-that "added square of largest two in 0,0,0 is 0"
@@ -82,7 +82,7 @@ We now have to use the `square` function
   (square (apply max numbers)))
 {% endhighlight %}
 
-Now lets improve our tests. We can improve their readability and remove duplication.
+Now let's improve our tests. We can improve their readability and remove duplication.
 
 {% highlight scheme %}
 (define (assert-that actual expected)
@@ -109,13 +109,13 @@ The quickest way to get it to pass is just to add the second number to the solut
   (+ (second numbers) (square (apply max numbers)))))
 {% endhighlight %}
 
-There is nothing to refactor so lets write a new failing test.
+There is nothing to refactor, so let's write a new failing test.
 
 {% highlight scheme %}
 (assert-that (add-square-of-largest-two (list 2 1 2)) (is 8))
 {% endhighlight %}
 
-Now lets sort the list by size and add the squares of the first two values.
+Now let's sort the list by size and add the squares of the first two values.
 
 {% highlight scheme %}
 (define (sort-descending list) (sort list >))
@@ -136,7 +136,7 @@ I dislike the fact that we're now sorting the list twice. Let's fix it by introd
 
 I can't think of a test which would fail using our current implementation. We're done.
 
-With respect to the book you could say we have _cheated_, as the concept of lists, sorting or local variables is not known at this point in the book, yet. We have also not respected what the exercise, or the customer, asked for. Our function does not take three arguments. It takes one. It's the way the tests and clean code principles have guided us.
+With respect to the book you could say we have _cheated_, as the concepts of lists, sorting and local variables are not known at this point in the book yet. We have also not respected what the exercise, or the customer, asked for. Our function does not take three arguments. It takes one. It's the way the tests and clean code principles have guided us.
 
 To still achieve the requested function signature we can build a wrapper function as follows
 

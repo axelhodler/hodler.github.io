@@ -7,7 +7,7 @@ category:
 tags: []
 ---
 
-Being around for a while each of us might have seen the following lines
+Being around for a while, each of us might have seen the following lines
 
 {% highlight bash %}
 if [ -z $1 ]; then
@@ -22,7 +22,7 @@ In the wild it can be found at the beginning of a bash script.
 
 Apparently the script requires an input and fails if the length of the input is zero. If the length is zero it's not present. Thus the `-z`.
 
-The author thought without the input it would make no sense to continue with the execution of script. As a result we exit with a non-zero status (`exit 1`).
+The author thought without the input it would make no sense to continue with the execution of the script. As a result we exit with a non-zero status (`exit 1`).
 
 After a quick search for _"bash check if input is provided"_ we could grab the above straight from [Stackoverflow](https://stackoverflow.com/questions/6482377/check-existence-of-input-argument-in-a-bash-shell-script). No further consideration. It's fine ;)
 
@@ -56,7 +56,7 @@ It also states `[` is the utility `test`. In fact we're able to interchange `[` 
 is empty
 {% endhighlight %}
 
-We can even build an alternative to `test`. Formulate the most important requirements into tests. Voila. A home grown testframework which consists of a single function
+We can even build an alternative to `test`. Formulate the most important requirements into tests. Voila. A home-grown test framework which consists of a single function
 
 {% highlight bash %}
 failed() {

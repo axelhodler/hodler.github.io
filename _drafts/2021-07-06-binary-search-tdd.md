@@ -10,7 +10,7 @@ Some people might be able to implement the binary search algorithm by heart. Cor
 
 Instead of keeping the algorithm in the language of your choice, or pseudo code, in your head it is easier to know the gist of what it does and then to arrive at the implementation step by step using Test Driven Development. As a side effect we both specify how it works, document the edge cases and make sure it works as intended.
 
-The post is serves as an introduction to create the algorithm using Kotlin as the programming language and JUnit 5 as the testing framework.
+The post serves as an introduction to create the algorithm using Kotlin as the programming language and JUnit 5 as the testing framework.
 
 We start with a simple test to create the structure of our method and describing what it does
 
@@ -31,7 +31,7 @@ fun binarySearch(number: Int, orderedListToSearch: List<Int>): Int {
 }
 {% endhighlight %}
 
-The parameters are the `number` where we want to find the index for and the `orderedListToSearch`.
+The parameters are the `number` for which we want to find the index and the `orderedListToSearch`.
 Running the test again will fail. Finding the index of `1` in `listOf(1)` is not `123`.
 We attempt to do the least amount of required work to get to a passing test by changing the implementation of `binarySearch`
 
@@ -43,7 +43,7 @@ fun binarySearch(number: Int, orderedListToSearch: List<Int>): Int {
 
 ## Handle the not found case!
 
-We could return `null`. Or we return `-1` to avoid changing the function. One might state using the magic number `-1` for the concept not found is bad. So is using `null` for the concept not found. Let's use `null` just it is more common in the world of Java.
+We could return `null`. Or we return `-1` to avoid changing the function. One might state using the magic number `-1` for the concept not found is bad. So is using `null` for the concept not found. Let's use `null` just because it is more common in the world of Java.
 
 The test passes. Let's create a second test where the expected index is not `0`.
 

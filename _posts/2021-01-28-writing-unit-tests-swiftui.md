@@ -6,7 +6,7 @@ description: ""
 tags: []
 ---
 
-Unit tests help us to make sure our app works as intended. Without having to start the app and navigating manually through it after every change. In comparison with UI tests they __test single views in isolation__ instead of a full user flow. They are a lot faster and focused.
+Unit tests help us to make sure our app works as intended. Without having to start the app and navigate manually through it after every change. In comparison with UI tests they __test single views in isolation__ instead of a full user flow. They are a lot faster and focused.
 
 To start off easy we use `ContentView`. It’s initially generated when creating a new project and draws the String `"Hello, world!"` in the center of the screen. It’s SwiftUI code.
 
@@ -20,7 +20,7 @@ Another approach is to use the library [ViewInspector](https://github.com/nalexn
 
 ## Testing Static Views
 
-In test test we first create the subject under test. In our case `ContentView`. We access the `text` of the `Text` view via `inspect().text().string()` and are able to assert on it. The test passes.
+In the test we first create the subject under test. In our case `ContentView`. We access the `text` of the `Text` view via `inspect().text().string()` and are able to assert on it. The test passes.
 
 <script src="https://gist.github.com/axelhodler/92d88a23e9b1b5a3ab191e12545d8437.js"></script>
 
@@ -60,7 +60,7 @@ Our `Text` view is now part of `GreetingsView`. It’s time to adapt the tests f
 
 <script src="https://gist.github.com/axelhodler/8f59d925d6d9fb9e5e75c799ee29010f.js"></script>
 
-Both our `GreetingsViewTests` and `ContentViewTests` pass. One issue though: We test the same thing twice. Both `ContentViewTests` and `GreetingsViewTests` test whether the user is greeted with `"Hello, world!”`, with a test `greetsWithHelloWorld`.
+Both our `GreetingsViewTests` and `ContentViewTests` pass. One issue though: We test the same thing twice. Both `ContentViewTests` and `GreetingsViewTests` test whether the user is greeted with `"Hello, world!"`, with a test `greetsWithHelloWorld`.
 
 It's test duplication. Instead, we can test whether the `GreetingView` is present in `ContentView` in `ContentViewTests`. Then we can test the wording the user is greeted with in `GreetingsViewTests`. We change the `ContentViewTests` to reflect that change.
 
