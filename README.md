@@ -33,12 +33,3 @@ Generate svgs via
 ## Preview pictures
 
 Should have a height of 300 pixels.
-
-## Troubleshooting
-### Nokogiri install fails on OSX during bundle install
-
-    brew install libxml2 libxslt
-    brew install libiconv
-    xcode-select --install
-
-Then run `bundle install` again
